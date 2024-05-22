@@ -1,35 +1,31 @@
-import ButtonSign from "./buttonSign";
-export default function TopButton(padding, marginLeft,  opacity, fontSize, paddingBottom, justifyContent, paddingTop) {
+import { Box } from "@mui/material";
+export default function TopButton({ button, backgroundColor, border, sign }) {
     return (
-        <ButtonSign padding={padding}
-            marginLeft={marginLeft}
-            opacity={opacity}
-            fontSize={fontSize}
-            paddingBottom={paddingBottom}
-            justifyContent={justifyContent}
-            paddingTop={paddingTop}
-        />
-
+        <div style={styles.container} >
+            <Box style={styles.button} >
+                <p className="sign" style={styles.text} >{sign}</p>
+            </Box>
+        </div>
     );
 }
 
-// const buttonTop = {
-//     text: {
-//         color: "white",
-//         opacity: 1,
-//         fontSize: "20px",
-//         paddingBottom: "0.1em",
-//         fontFamily: '"Jost", sans-serif'
-//     },
-//     container: {
-//         display: 'flex',
-//         justifyContent: 'end',
-//         paddingTop: '6vw'
-//     },
-//     button: {
-//         marginLeft: "2%",
-//         borderRadius: "50px",
-//         backgroundColor: "rgb(253, 226, 205, 0.7)",
-//         padding: "0.22em",
-//     },
-// }
+const styles = {
+    text: {
+        color: "white",
+        opacity: 1,
+        fontSize: "26px",
+
+        fontFamily: '"Jost", sans-serif'
+    },
+    container: {
+        display: 'flex',
+        justifyContent: 'end',
+
+    },
+    button: {
+        marginLeft: "2vw",
+        borderRadius: "50px",
+        backgroundColor: "rgb(253, 226, 205, 0.7)",
+        padding: "0.3em",
+    },
+}
