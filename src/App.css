@@ -12,6 +12,22 @@ p {
     padding: 0;
 }
 
+input,
+textarea {
+  background: none;
+  border: none;
+  font-size: 23px;
+  color: white;
+}
+::-webkit-input-placeholder {
+    color: white;
+  }
+  
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+
 .background {
     background-image: url(../public/img/bg.jpg);
     height: 20vh;
@@ -139,16 +155,17 @@ p {
     margin-top: 40vh;
 }
 
-.Svg_boshka {
-    margin-left: 87vw;
-    margin-top: 6vh;
+.svg_boshka {
+    margin-left: 88vw;
+    margin-top: 10vh;
     width: 8vw;
     height: 16vh;
+    position: absolute;
 }
 
 .cist {
 
-    margin-top: 30vh;
+    margin-top: 56vh;
     margin-left: 4vw;
     height: 17vh;
     width: 11vw;
@@ -157,13 +174,13 @@ p {
 
 .svg_messeng {
     margin-left: 86vw;
-    margin-top: 32vh;
+    margin-top: 44vh;
     height: 11vh;
     width: 11vw;
 }
 
 .crivaya_line {
-    margin-top: 60vh;
+    margin-top: 74vh;
     margin-left: -87vw;
     width: 88vw;
     position: absolute;
@@ -190,10 +207,11 @@ p {
     margin-top: 3vh;
 }
 
-.list_grup {
+.list_grip {
     display: flex;
     justify-content: space-between;
 }
 .educationGrup {
     display: flex;
+
 }

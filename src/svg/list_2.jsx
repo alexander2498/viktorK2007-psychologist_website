@@ -17,7 +17,7 @@ export default function List_2({  }) {
 
 const styles = {
     style: {
-        marginLeft: "37.9vw", marginBottom: "4vh"
+        // marginLeft: "37.9vw", marginBottom: "4vh"
     }
 }
 

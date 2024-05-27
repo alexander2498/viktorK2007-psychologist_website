@@ -1,21 +1,21 @@
-import { Box, Container } from "@mui/material";
+import React from "react";
+import { Box } from "@mui/material";
+import { styled } from "@mui/system";
+
+const TitleBox = styled(Box)(({ theme }) => ({
+  color: "white",
+  display: "flex",
+  justifyContent: "center",
+  marginTop: "5vh",
+  [theme.breakpoints.down('1300')]: {
+    marginTop: "20vh",
+  },
+}));
 
 export default function Title() {
-    return (
-        <Box className="Title" style={styles.Container}>
-            <p className="Title_text" style={styles.text} >ЖИТЬ - ЗНАЧИТ МЕДЛЕННО РОЖДАТЬСЯ</p>
-        </Box>
-
-    );
-}
-const styles = {
-    text: {
-        fontSize: "60px"
-    },
-    Container: {
-        marginTop:"5vh",
-        color: "white",
-        display: "flex",
-        justifyContent: "center",
-    },
+  return (
+    <TitleBox>
+      <p style={{ fontSize: "60px" }}>ЖИТЬ - ЗНАЧИТ МЕДЛЕННО РОЖДАТЬСЯ</p>
+    </TitleBox>
+  );
 }

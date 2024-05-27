@@ -21,5 +21,6 @@ const styles = {
     container: {
         backgroundColor: "#f4eeee",
         borderRadius: "69px",
+        position:"absolute"
     }
 }

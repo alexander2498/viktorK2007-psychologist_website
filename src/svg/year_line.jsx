@@ -18,9 +18,9 @@ export default function Year_line({ }) {
 
 const styles = {
     style: {
-        marginTop: "0.4vh",
+        marginTop: "5.4vh",
         marginLeft: "4vw",
-        height: "44vh",
+        height: "28vh",
         width: "0.78vw"
     }
 }

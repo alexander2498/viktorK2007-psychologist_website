@@ -19,7 +19,7 @@ const styles = {
     },
     container:{
         position: "absolute",
-        width: "66vw",
+        width: "65vw",
         backgroundColor: "#cbd5ca",
         marginLeft: "30vw",
         marginTop: "10vh",
