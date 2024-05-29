@@ -33,7 +33,7 @@ import Year_line from './svg/year_line';
 import Text_education from './fifth_screen/text_education';
 import PriceBlock from './fifth_screen/priceBlock';
 import Forma from './forma/forma';
-
+import Forma2 from './forma/forma2'
 
 
 function App() {
@@ -41,6 +41,7 @@ function App() {
     <div>
       <div className='background' style={styles.background} >
         <div className='flex' style={styles.flex}>
+
           <TopButton border={'none'} backgroundColor={'rgb(255, 255, 255, 0.4)'} sign="о методах" />
           <TopButton border={'none'} backgroundColor={'rgb(255, 255, 255, 0.4)'} sign="о сеансах" />
           <TopButton border={'none'} backgroundColor={'rgb(255, 255, 255, 0.4)'} sign="об образовании" />
@@ -143,7 +144,8 @@ function App() {
 
       </div>
 
-      <Forma />
+      {/* <Forma /> */}
+      <Forma2 />
     </div>
   );
 }

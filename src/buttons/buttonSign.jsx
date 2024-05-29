@@ -1,5 +1,4 @@
 import { Box } from "@mui/material"
-// import { useState } from "react";
 const styles = {
     button: {
         borderRadius: '50px',
@@ -23,10 +22,6 @@ const styles = {
 
 
 export default function ButtonSign({ sign, backgroundColor, border, }) {
-    // const [styles, setStyle] = useState({ variant });
-   
-    // console.log(variant)
-
 
     return (
         <div style={styles.container} >
