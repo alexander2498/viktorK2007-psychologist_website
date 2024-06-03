@@ -1,8 +1,13 @@
+
+
+import styled from "styled-components";
+
 export default function Sab_text_text_title() {
+
     return (
-        <div className="conteiner_Text_title" >
+        <Mstyles>
             
-                <p className="Text_title" style={styles.style}>Меня зовут Алеся Полякова. Когда я находилась на пике продолжительной
+                <p >Меня зовут Алеся Полякова. Когда я находилась на пике продолжительной
             и успешной карьеры в одном из крупнейших нефтехимических холдингов мира, 
             в моей жизни возник эриксоновский коучинг, обучение которому привело меня к Гуманистическому Гипнозу,
             что
@@ -15,20 +20,46 @@ export default function Sab_text_text_title() {
             искусствоведение,
             юнгианский анализ...</p>
            
-        </div>
+        </Mstyles>
     );
 }
 
 
-const styles = {
-    style:{
-        height: "31vh",
-        paddingLeft: "1.5em",
-        fontFamily: '"Jost", sans-serif',
-        marginLeft: "4vw",
-        width: "60vw",
-        fontSize: "26px",
-        border: "none",
-        marginTop: "6vh"
-    }
+const Mstyles = styled.div`
+  font-family: Jost, sans-serif;
+  width: 51vw;
+  margin-left: 6vw ;
+  font-size:26px ;
+
+
+@media (max-width: 1024px) {
+        color: black;
+        height: 31vh;
+        padding-left: 1.5em;
+        font-family: "Jost", sans-serif;
+        margin-left: 4vw;
+        width: 63vw;
+        font-size: 22px;
+        border: none;
+        margin-top: 6vh;
+    
 }
+
+@media (max-width: 769px) {
+    height: 31vh;
+    padding-left: 1.5em;
+    font-family: "Jost", sans-serif;
+    margin-left: 4vw;
+    width: 63vw;
+    font-size: 18px;
+    border: none;
+    margin-top: 0vh;
+}
+
+@media (max-width: 431px) {
+    
+    display: none;
+  
+}
+
+`;

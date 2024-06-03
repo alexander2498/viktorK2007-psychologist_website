@@ -1,19 +1,30 @@
+import styled from "styled-components";
+
 export default function About_you() {
     return (
         <div className="conteiner_Text_title" >
 
-            <p className="Text_title" style={styles.style}>  О ВАС</p>
+            <Text className="Text_title" >  О ВАС</Text>
 
         </div>
     );
 }
 
 
-const styles = {
-    style: {
-        fontSize: "60px",
-        fontFamily: '"Bad Script", cursive',
-        marginTop: "4vh",
-        marginLeft: "6vw"
-    }
-}
+const Text = styled.p`
+    font-size: 60px;
+  font-family: "Bad Script", cursive;
+  margin-top: 4vh;
+  margin-left: 6vw;
+  @media (max-width: 769px) {
+    font-size: 35px;
+    font-family: "Bad Script", cursive;
+    margin-top: 4vh;
+    margin-left: 6vw;
+  }
+  @media (max-width: 431px) {
+    font-size: 26px;
+    font-family: "Bad Script", cursive;
+    margin-left: 37vw;
+  }
+`

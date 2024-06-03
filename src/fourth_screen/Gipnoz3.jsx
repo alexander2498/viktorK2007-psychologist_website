@@ -1,10 +1,9 @@
-
 import styled from "styled-components";
 
-export default function Gipnoz({text, }) {
+export default function Gipnoz3({text, }) {
     return (
 
-        <Container  >
+        <Container >
             <Text  >{text}</Text>
         </Container>
 
@@ -15,50 +14,50 @@ export default function Gipnoz({text, }) {
 const Text = styled.p`
 font-size: 26px;
   font-family: "Jost", sans-serif;
-  width: 74vw;
   padding: 1.5em;
+  width: 74vw;
 
   @media (max-width: 1025px) {
     font-size: 20px;
     font-family: "Jost", sans-serif;
-    width: 74vw;
     padding: 1.5em;
+    width: 74vw;
   }
   @media (max-width: 769px) {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Jost", sans-serif;
-    width: 74vw;
     padding: 1.5em;
+    width: 74vw;
   }
   @media (max-width: 431px) {
     font-size: 11px;
     font-family: "Jost", sans-serif;
-    width: 49vw;
     padding: 2.5em;
+    width: 44vw;
   }
 `;
 const Container = styled.div`
-    background-color: #f4eeee;
+    box-shadow: -16px 13px 0px rgb(192, 206, 191);
+  background-color: #f4eeee;
   border-radius: 69px;
-  margin-top: 6vh;
-  margin-left: 4vw;
+  margin-top: 11vh;
+  margin-left: 5vw;
   position: absolute;
-  box-shadow: 16px 13px 0px rgb(198, 191, 206);
 
 @media (max-width: 769px) {
+    box-shadow: -9px 7px 0px rgb(192, 206, 191);
     background-color: #f4eeee;
     border-radius: 69px;
-    margin-top: 7vh;
-    margin-left: 4vw;
+    margin-top: 59vh;
+    margin-left: 3vw;
     position: absolute;
-    box-shadow: 9px 7px 0px rgb(198, 191, 206);
 }
 @media (max-width: 431px) {
-    background-color: #EDDADA;
+    box-shadow: -7px 7px 0px rgb(192, 206, 191);
+        background-color: #E3E3E3;
         border-radius: 69px;
-        margin-top: 3vh;
-        margin-left: 12vw;
-        box-shadow: 0px 10px 0px rgb(198, 191, 206);
+        margin-top: 65vh;
+        margin-left: 9vw;
 }
 
 `;

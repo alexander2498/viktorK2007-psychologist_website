@@ -1,12 +1,13 @@
+import styled from "styled-components";
 
 
 export default function Wefy_sText() {
     return (
-        <div className="conteiner_Text_title" style={styles.style} >
+        <Container className="conteiner_Text_title"  >
 
-            <p className="Text_title" style={styles.text} >(как проходит сеанс)</p>
+            <Text className="Text_title"  >(как проходит сеанс)</Text>
 
-        </div>
+        </Container>
     );
 }
 
@@ -20,3 +21,18 @@ const styles = {
         marginTop:"2vh"
     }
 }
+const Text = styled.p`
+    font-family:"Bad Script", cursive;
+    font-size:26px;
+    margin-top:3vh;
+    @media (max-width: 769px) {
+        font-size:16px;
+        margin-top:4vh;
+    }
+    @media (max-width: 431px) {
+        font-size:12px
+    }
+`
+const Container = styled.div`
+
+`

@@ -18,7 +18,6 @@ import The_method from './fourth_screen/the_method';
 import Gipnoz from './fourth_screen/gipnoz';
 import Svg_boshka from './svg/svg_boshka';
 import Cist from './svg/Cist';
-import svg_messeng from './svg/svg_messeng';
 import Svg_messeng from './svg/svg_messeng';
 import Crivaya_line from './svg/svg_crivaya_line';
 import Wefy from './fifth_screen/Wefy';
@@ -32,26 +31,25 @@ import Education from './fifth_screen/education';
 import Year_line from './svg/year_line';
 import Text_education from './fifth_screen/text_education';
 import PriceBlock from './fifth_screen/priceBlock';
-import Forma from './forma/forma';
 import Forma2 from './forma/forma2'
-
+import MenuTitle from './title/menuTitle';
+import EndScreen from './forma/End_screen';
+import Gipnoz2 from './fourth_screen/Gipnoz2';
+import Gipnoz3 from './fourth_screen/Gipnoz3';
 
 function App() {
   return (
     <div>
       <div className='background' style={styles.background} >
-        <div className='flex' style={styles.flex}>
-
-          <TopButton border={'none'} backgroundColor={'rgb(255, 255, 255, 0.4)'} sign="о методах" />
-          <TopButton border={'none'} backgroundColor={'rgb(255, 255, 255, 0.4)'} sign="о сеансах" />
-          <TopButton border={'none'} backgroundColor={'rgb(255, 255, 255, 0.4)'} sign="об образовании" />
-          <TopButton border={'none'} backgroundColor={'rgb(255, 255, 255, 0.4)'} sign="как связаться" />
-        </div>
+      <MenuTitle />
         <div className='box_logo'>
           <Logoo />
         </div>
         <Title />
+
+        <a href='#forma'>
         <ButtonSign border={'3px solid white'} backgroundColor='rgb(255, 255, 255, 0.4)' sign="Записаться" />
+        </a>
 
       </div>
       <Text_title />
@@ -109,8 +107,8 @@ function App() {
       </div>
 
       <Gipnoz marginTop={"3vh"} marginLeft={"4vw"} boxShadow={"16px 13px 0px rgb(198, 191, 206)"} text={"Гипноз, и конкретно гуманистический гипноз, — это наиболее бережный метод коммуникации с самим собой, со своей бессознательной частью. Гуманистический гипноз создан Оливье Локером и Патрисией д’Анжели в конце 90-х прошлого века. Гипноз без манипуляций! Это метод, который приводит к изменениям благодаря самопомощи  клиента, а гипнотерапевт является только сопровождающим его или просто осветителем!"} />
-      <Gipnoz marginTop={"48vh"} marginLeft={"17vw"} boxShadow={"16px 13px 0px rgb(226, 182, 182)"} text={`Эриксоновский коучинг может быть эффективным инструментом, если Вам необходимо планировать проект,приоритизировать задачи, найти решение или начать новый этап в Вашей жизни.\n\nМэрилин Аткинсон, основательница этого направления, считает, что изменить мир можно одной беседой!`} />
-      <Gipnoz marginTop={"100vh"} marginLeft={"5vw"} boxShadow={"-16px 13px 0px rgb(192, 206, 191)"} text={"Арт-терапия - это работа с вашими чувствами через искусство и творческое начало человека.\n\nАрт-терапия способствует саморазвитию и самовыражению, внутренней гармонизации человека.В каждом из нас есть творческое начало, ведь, как говорят, человек — это Творец своей судьбы, а искусство — это универсальный целитель-переводчик языка чувств и эмоций! Попробуйте и разрешите себе творить, в первую очередь, для самоисследования, для проживания и принятия себя и своих чувств."} />
+      <Gipnoz2 text={`Эриксоновский коучинг может быть эффективным инструментом, если Вам необходимо планировать проект,приоритизировать задачи, найти решение или начать новый этап в Вашей жизни.\n\nМэрилин Аткинсон, основательница этого направления, считает, что изменить мир можно одной беседой!`} />
+      <Gipnoz3  text={"Арт-терапия - это работа с вашими чувствами через искусство и творческое начало человека.\n\nАрт-терапия способствует саморазвитию и самовыражению, внутренней гармонизации человека.В каждом из нас есть творческое начало, ведь, как говорят, человек — это Творец своей судьбы, а искусство — это универсальный целитель-переводчик языка чувств и эмоций! Попробуйте и разрешите себе творить, в первую очередь, для самоисследования, для проживания и принятия себя и своих чувств."} />
 
       <Svg_boshka />
       <Cist />
@@ -145,7 +143,10 @@ function App() {
       </div>
 
       {/* <Forma /> */}
-      <Forma2 />
+      <a id='forma'>
+      <Forma2  />
+      </a>
+      <EndScreen />
     </div>
   );
 }

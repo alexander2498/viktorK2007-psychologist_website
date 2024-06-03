@@ -132,7 +132,7 @@ const styles = {
         width: "40vw", marginLeft: "4vw", paddingTop: "2vh"
     },
     infoFlex: {
-        display: "flex", height: "47vh"
+        display: "flex", height: "51vh"
     },
     info: {
         backgroundColor: "#9bb6e0",

@@ -7,15 +7,35 @@ const TitleBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   marginTop: "5vh",
-  [theme.breakpoints.down('1300')]: {
-    marginTop: "20vh",
+  fontSize: "60px",
+  [theme.breakpoints.down('1301')]: {
+    marginTop: "5vh",
+    fontSize: "55px"
+  },
+  [theme.breakpoints.down('1025')]: {
+    marginTop: "7vh",
+    fontSize: "45px"
+  },
+  [theme.breakpoints.down('769')]: {
+    fontSize: "35px"
+  },
+  [theme.breakpoints.down('431')]: {
+    color: "white",
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "10vh",
+    width: "60vw",
+    height: "19vh",
+    marginLeft: "20vw",
+    textAlign: "center",
+    fontSize: "30px"
   },
 }));
 
 export default function Title() {
   return (
     <TitleBox>
-      <p style={{ fontSize: "60px" }}>ЖИТЬ - ЗНАЧИТ МЕДЛЕННО РОЖДАТЬСЯ</p>
+      <p >ЖИТЬ - ЗНАЧИТ МЕДЛЕННО РОЖДАТЬСЯ</p>
     </TitleBox>
   );
 }

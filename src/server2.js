@@ -21,7 +21,7 @@ server.post("/api/feedback", async (req, res) => {
       secure: true,
       auth: {
         user: "form_test@inbox.ru",
-        pass: "14WGDKn7HiWmemjBQPEv",
+        pass: "RPpAt$Oa2rg5",
       },
     });
 

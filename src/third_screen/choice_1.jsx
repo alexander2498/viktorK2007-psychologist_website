@@ -1,30 +1,60 @@
 import { Box } from "@mui/material";
+import styled from "styled-components";
 export default function Choice_1({ }) {
     return (
 
-        <Box style={styles.container} >
-            <p className="sign" style={styles.text} >у вас есть ВЫБОР как это сделать!</p>
-        </Box>
+        <Container >
+            <Text >у вас есть ВЫБОР как это сделать!</Text>
+        </Container>
 
     );
 }
 
-const styles = {
-    text: {
-        marginTop: "1vh",
-        marginLeft: "5vh",
-        padding: "0.2em"
-    },
-    container:{
-        position: "absolute",
-        width: "38vw",
-        zIndex: 2,
-        backgroundColor: "#ebe1e1",
-        borderRadius: "20px",
-        marginLeft: "4vw",
-        marginTop: "4vh",
-        boxShadow: "6px 3px 4px gray",
-        fontSize: "30px",
-        fontFamily: '"Jost", sans-serif'
-    }
-}
+
+
+const Text = styled.p`
+    margin-top: 1vh;
+  margin-left: 5vh;
+  padding: 0.2em;
+  @media (max-width: 420px) {
+    margin-top: 1vh;
+  margin-left: 5vh;
+  padding: 0.2em;
+  }
+`;
+const Container = styled.div`
+    position: absolute;
+  width: 38vw;
+  z-index: 2;
+  background-color: #ebe1e1;
+  border-radius: 20px;
+  margin-left: 4vw;
+  margin-top: 8vh;
+  box-shadow: 6px 3px 4px gray;
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  @media (max-width: 769px) {
+    position: absolute;
+    width: 38vw;
+    z-index: 2;
+    background-color: #ebe1e1;
+    border-radius: 20px;
+    margin-left: 4vw;
+    margin-top: 8vh;
+    box-shadow: 6px 3px 4px gray;
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+  }
+  @media (max-width: 431px) {
+    position: absolute;
+    width: 60vw;
+    z-index: 2;
+    background-color: #ebe1e1;
+    border-radius: 20px;
+    margin-left: 16vw;
+    margin-top: 7vh;
+    box-shadow: 3px 3px 4px gray;
+    font-size: 10px;
+    font-family: "Jost", sans-serif;
+  }
+`;

@@ -1,19 +1,32 @@
+import styled from "styled-components";
+
+
 export default function If_you() {
     return (
         <div className="conteiner_Text_title" >
 
-            <p className="Text_title" style={styles.style}>  ...ЕСЛИ ВЫ</p>
+            <Text className="Text_title" >  ...ЕСЛИ ВЫ</Text>
 
         </div>
     );
 }
 
 
-const styles = {
-    style: {
-        fontSize: "40px",
-        fontFamily: '"Bad Script", cursive',
-        marginLeft: "14vw",
-        marginTop: "12vh"
-    }
-}
+const Text = styled.p`
+     font-size: 40px;
+  font-family: "Bad Script", cursive;
+  margin-left: 14vw;
+  margin-top: 12vh;
+  @media (max-width: 769px) {
+    font-size: 27px;
+    font-family: "Bad Script", cursive;
+    margin-left: 14vw;
+    margin-top: 12vh;
+  }
+  @media (max-width: 431px) {
+    font-size: 26px;
+    font-family: "Bad Script", cursive;
+    margin-left: 31vw;
+    margin-top: 0
+  }
+`

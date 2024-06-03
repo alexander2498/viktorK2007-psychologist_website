@@ -1,18 +1,35 @@
+import styled from "styled-components";
+
 export default function Text_title() {
     return (
         <div className="conteiner_Text_title" >
             
-                <p className="Text_title" style={styles.style}>ОБО МНЕ</p>
+                <Text>ОБО МНЕ</Text>
            
         </div>
     );
 }
 
 
-const styles = {
-    style:{
-        fontSize: "47px",
-        marginLeft: "26vw",
-        fontFamily: '"Bad Script", cursive'
-    }
+
+
+const Text = styled.p`
+    font-size: 47px;
+    margin-left: 26vw;
+    font-family: "Bad Script", cursive;
+
+@media (max-width:769px ) {
+    font-size: 27px;
+    margin-left: 31vw;
+    margin-top: 4vh;
+    font-family: "Bad Script", cursive;
+    
 }
+
+@media (max-width:431px ) {
+    font-size: 27px;
+    margin-left: 31vw;
+    margin-top: 2vh;
+    font-family: "Bad Script", cursive;
+}
+`;
