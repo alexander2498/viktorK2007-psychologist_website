@@ -37,12 +37,12 @@ font-size: 26px;
   }
 `;
 const Container = styled.div`
-      background-color: #f4eeee;
-  border-radius: 69px;
-  margin-top: 11vh;
-  margin-left: 17vw;
-  position: absolute;
-  box-shadow: 16px 13px 0px rgb(226, 182, 182);
+  background-color: #f4eeee;
+    border-radius: 69px;
+    margin-top: 47vh;
+    margin-left: 18vw;
+    position: absolute;
+    box-shadow: 16px 13px 0px rgb(226, 182, 182);
 
 @media (max-width: 769px) {
     background-color: #f4eeee;

@@ -4,7 +4,7 @@ export default function Wefy() {
     return (
         <div className="conteiner_Text_title" >
 
-            <Text className="Text_title" >  ЕЩЁ ДЛЯ ВАС</Text>
+            <Text >  ЕЩЁ ДЛЯ ВАС</Text>
 
         </div>
     );
@@ -24,6 +24,7 @@ const Text = styled.p`
         font-size:33px;
     }
     @media (max-width: 431px) {
-        font-size:26px
+        font-size:26px;
+        text-align: left;
     }
 `

@@ -38,18 +38,18 @@ font-size: 26px;
   }
 `;
 const Container = styled.div`
-    background-color: #f4eeee;
-  border-radius: 69px;
-  margin-top: 6vh;
-  margin-left: 4vw;
-  position: absolute;
-  box-shadow: 16px 13px 0px rgb(198, 191, 206);
+   background-color: #f4eeee;
+    border-radius: 69px;
+    margin-top: 6vh;
+    margin-left: 6vw;
+    position: absolute;
+    box-shadow: 16px 13px 0px rgb(198, 191, 206);
 
 @media (max-width: 769px) {
     background-color: #f4eeee;
     border-radius: 69px;
     margin-top: 7vh;
-    margin-left: 4vw;
+    margin-left: 6vw;
     position: absolute;
     box-shadow: 9px 7px 0px rgb(198, 191, 206);
 }

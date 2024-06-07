@@ -1,8 +1,10 @@
+import styled from "styled-components";
+
 export default function Girl({  }) {
     return (
         
         
-<svg className="girl" width="432" height="363" viewBox="0 0 432 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+<GirlSvg  width="432" height="363" viewBox="0 0 432 363" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="234" cy="21" r="2" fill="#020202" />
             <circle cx="234" cy="21" r="2" fill="#020202" />
             <circle cx="234" cy="21" r="2" fill="#020202" />
@@ -110,8 +112,22 @@ export default function Girl({  }) {
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_913_3" result="shape" />
                 </filter>
             </defs>
-        </svg>
+        </GirlSvg>
        
         
     );
 }
+
+const GirlSvg = styled.svg`
+
+
+@media (max-width: 769px) {
+    width: 46vw;
+    height: 40vh;
+}
+
+@media (max-width: 431px) {
+   width: 40vw;
+    height: 23vh;
+}
+`

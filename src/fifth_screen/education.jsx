@@ -14,18 +14,17 @@ export default function Education() {
 const Text = styled.p`
       font-size: 50px;
   font-family: "Bad Script", cursive;
-  margin-left: 4vw;
-  margin-top: 10vh;
+  margin-left: 5vw;
   @media (max-width: 769px) {
     font-size: 36px;
     font-family: "Bad Script", cursive;
-    margin-left: 4vw;
+    margin-left: 5vw;
     margin-top: 10vh;
   }
   @media (max-width: 431px) {
     font-size: 26px;
     font-family: "Bad Script", cursive;
     margin-left: 3vw;
-    margin-top: 64vh;
+    margin-top: 49vh;
   }
 `

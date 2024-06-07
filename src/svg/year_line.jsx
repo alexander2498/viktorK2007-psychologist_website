@@ -24,7 +24,7 @@ const Container = styled.svg`
     
     margin-top: 5.4vh;
     margin-left: 4vw;
-    height: 28vh;
+    height: 37vh;
     width: 0.76;
 
     @media (max-width: 769px) {

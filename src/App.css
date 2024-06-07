@@ -6,28 +6,23 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 a {
   color: #000 !important;
   text-decoration: none;
 }
+
 p {
   margin: 0;
   padding: 0;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
 
-
-.button_burger {
-  display: none;
-}
-
-.burger_main {
-  display: none;
-}
 
 .container {
   max-width: 1200px;
@@ -62,7 +57,7 @@ p {
   position: absolute;
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   left: 5px;
   transition: transform .5s, opacity .5s, background-color .5s;
 }
@@ -90,7 +85,7 @@ p {
 .header.open .header__burger-btn span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
 }
-
+  
 .menu__list {
   display: flex;
   align-items: center;
@@ -106,7 +101,6 @@ p {
 .menu__link {
   font-size: 16px;
 }
-
 
 
 input,
@@ -170,12 +164,27 @@ textarea {
   background-size: cover;
   background-position: center;
   width: 20vw;
+  animation: imj 10s infinite;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+@keyframes imj {
+  0% {
+    background-image: url(../public/img/bg.jpg) center / cover no-repeat;
+  }
+
+  50% {
+    background-image: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
+  }
+}
+
 
 .sad_line {
   border-top: 1px solid;
-  width: 30vw;
-  margin-left: 3vw;
+  width: 27vw;
+  margin-left: 6vw;
   margin-top: 6vh;
   background-size: cover;
 }
@@ -198,6 +207,15 @@ textarea {
   margin-right: 3vw;
 }
 
+.Logo {
+  background-image: url(../src/assets/Logo.jpg);
+  background-size: cover;
+  width: 6vw;
+  height: 6vw;
+  margin-left: 8vw;
+  margin-top: 1vh;
+}
+
 .cartinca {
   background-image: url(../src/assets/Logo.jpg);
   background-size: cover;
@@ -212,7 +230,7 @@ textarea {
 }
 
 .image_3 {
-  margin-left: 3vw;
+  margin-left: 6vw;
   box-shadow: 16px -13px 1px rgb(198, 191, 206);
   border-radius: 35px;
   background-image: url(../public/img/image\ 2.png);
@@ -233,17 +251,18 @@ textarea {
   height: 16vw;
   margin-top: 5vh;
   margin-left: 9vw;
-  border-radius: 7px;
+  border-radius: 20px;
+  position: absolute;
 }
 
 .image_4 {
   background-image: url(../public/img/image3.png);
   width: 28vw;
-  height: 16vw;
-  background-size: cover;
-  position: absolute;
-  margin-left: 66vw;
-  margin-top: 6vh;
+    height: 16vw;
+    background-size: cover;
+    position: absolute;
+    margin-left: 8vw;
+    margin-top: 6vh;
 }
 
 .image3_line {
@@ -258,7 +277,7 @@ textarea {
   background-image: url(../public/img/will-van-wingerden-87463-e1549022529660\ 1.png);
   background-size: cover;
   width: 100vw;
-  height: 20vh;
+  height: 20vw;
   background-repeat: no-repeat;
 
 }
@@ -300,8 +319,7 @@ textarea {
 }
 
 .cist {
-
-  margin-top: 56vh;
+  margin-top: 52vh;
   margin-left: 4vw;
   height: 17vh;
   width: 11vw;
@@ -310,13 +328,13 @@ textarea {
 
 .svg_messeng {
   margin-left: 86vw;
-  margin-top: 44vh;
+  margin-top: 24vh;
   height: 11vh;
   width: 11vw;
 }
 
 .crivaya_line {
-  margin-top: 74vh;
+  margin-top: 54vh;
   margin-left: -87vw;
   width: 88vw;
   position: absolute;
@@ -335,7 +353,7 @@ textarea {
 
 .girl {
   margin-top: 4vh;
-  margin-left: 3vw;
+  margin-left: 5vw;
 }
 
 .V_line {
@@ -364,6 +382,13 @@ textarea {
 
 }
 
+.EndContainer{
+  background-color: #adbbdd;
+  margin-top: 13vh;
+  position: absolute;
+  width: 100vw;
+}
+
 @media (max-width:1024px) {
 
   .cartinca {
@@ -378,47 +403,81 @@ textarea {
     width: 13vw;
     height: 13vw;
   }
-  .image_3{
+
+  .image_3 {
     width: 27vw;
     height: 35vw;
     box-shadow: 9px -8px 1px rgb(198, 191, 206);
   }
+
+  .image_4{
+    background-image: url("../public/img/image3.png");
+    width: 35vw;
+    height: 22vw;
+    background-size: cover;
+    position: absolute;
+    margin-left: 3vw;
+    margin-top: 4vh;
+  }
+
+  .image_3_background{
+    position: absolute;
+    background-color: #81a0d0;
+    width: 36vw;
+    height: 22vw;
+    margin-top: 3vh;
+    margin-left: 4vw;
+    border-radius: 7px;
+  }
+
   .cist {
 
     margin-top: 36vh;
-    margin-left: 4vw;
+    margin-left: 6vw;
     height: 17vh;
     width: 11vw;
-  
+
   }
+
   .svg_messeng {
-    margin-left: 86vw;
+    margin-left: 87vw;
     margin-top: 13vh;
     height: 11vh;
     width: 11vw;
   }
+
   .box_relaative {
     display: flex;
     margin-top: 20vh;
     width: 64vw;
     margin-left: 35vw;
   }
+
   .crivaya_line {
-    margin-top: 39vh;
+    margin-top: 40vh;
     margin-left: -87vw;
     width: 88vw;
     position: absolute;
   }
+
   .sad_line_flex {
     display: block;
     justify-content: space-between;
     margin-right: 1vw;
     margin-top: 2vh;
   }
-  .sad_line{
-    width: 95vw;
+
+  .sad_line {
+    width: 93vw;
   }
-  
+  input,
+  textarea {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+  }
+
 }
 
 
@@ -426,11 +485,92 @@ textarea {
   .grup {
     display: none;
   }
+  .sad_line{
+    border-top: 1px solid;
+    margin-left: 4vw;
+    margin-top: -3vh;
+    background-size: cover;
+  }
 
+  .Box233{
+    border-left: 1px solid black;
+  }
 
   .about_flex {
     display: block;
   }
+
+
+
+  .image_3{
+    width: 27vw;
+        height: 35vw;
+        box-shadow: 6px -6px 1px rgb(198, 191, 206);
+        border-radius: 13px;
+        margin-top: 1vh;
+  }
+
+  
+
+  .box_you {
+    display: block;
+  }
+
+  .svg_messeng {
+    margin-left: 73vw;
+    margin-top: 18vh;
+    height: 12vh;
+    width: 24vw;
+  }
+
+  .cist {
+    margin-top: 41vh;
+    margin-left: 5vw;
+    height: 17vh;
+    width: 19vw;
+  }
+
+  .svg_boshka {
+    margin-left: 82vw;
+    margin-top: 10vh;
+    width: 14vw;
+    height: 16vh;
+    position: absolute;
+  }
+
+  .The_method_flex {
+    display: block;
+    margin-top: 27vh;
+  }
+
+  .method_line {
+    margin-left: 3vw;
+    height: 4vh;
+    width: 95vw;
+    border-bottom: 1px solid;
+  }
+
+  .girl_text_flex{
+
+  }
+
+  .list_grip {
+    display: none;
+  }
+  .Logo{
+    width: 12vw;
+    height: 12vw;
+    margin-left: 9vw;
+  }
+  .V_line {
+    display: none;
+  }
+  .crivaya_line{
+    margin-top: 74vw;
+  }
+
+
+
   .header__burger-btn {
     display: block;
   }
@@ -467,39 +607,4 @@ textarea {
   .header__container {
     display: block;
   }
-  .box_you {
-    display: block;
-  }
-  .svg_messeng {
-    margin-left: 73vw;
-    margin-top: 18vh;
-    height: 12vh;
-    width: 24vw;
-}
-.cist {
-  margin-top: 41vh;
-  margin-left: 5vw;
-  height: 17vh;
-  width: 19vw;
-}
-.svg_boshka {
-  margin-left: 82vw;
-  margin-top: 10vh;
-  width: 14vw;
-  height: 16vh;
-  position: absolute;
-}
-.The_method_flex {
-  display: block;
-  margin-top: 27vh;
-}
-.method_line {
-  margin-left: 3vw;
-  height: 4vh;
-  width: 98vw;
-  border-bottom: 1px solid;
-}
-.list_grip{
-  display: none;
-}
 }

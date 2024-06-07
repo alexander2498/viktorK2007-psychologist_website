@@ -20,5 +20,9 @@ export default function List_2({  }) {
 
 
 const Container = styled.svg`
-    width:36vw;
+    width:22vw;
+    @media (max-width: 769px) {
+        width: 33vw;
+    height: 40vh;
+    }
 `

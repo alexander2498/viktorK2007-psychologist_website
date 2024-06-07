@@ -5,22 +5,12 @@ export default function Wefy_sText() {
     return (
         <Container className="conteiner_Text_title"  >
 
-            <Text className="Text_title"  >(как проходит сеанс)</Text>
+            <Text  >(как проходит сеанс)</Text>
 
         </Container>
     );
 }
 
-const styles = {
-    style: {
-        fontFamily: '"Bad Script", cursive', fontSize: "26px",
-        with:"10vw",
-        hight:"10vh"
-    },
-    text:{
-        marginTop:"2vh"
-    }
-}
 const Text = styled.p`
     font-family:"Bad Script", cursive;
     font-size:26px;
@@ -30,7 +20,7 @@ const Text = styled.p`
         margin-top:4vh;
     }
     @media (max-width: 431px) {
-        font-size:12px
+        font-size:12px;
     }
 `
 const Container = styled.div`

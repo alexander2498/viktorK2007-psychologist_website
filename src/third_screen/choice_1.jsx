@@ -14,11 +14,11 @@ export default function Choice_1({ }) {
 
 const Text = styled.p`
     margin-top: 1vh;
-  margin-left: 5vh;
+  margin-left: 4vh;
   padding: 0.2em;
   @media (max-width: 420px) {
     margin-top: 1vh;
-  margin-left: 5vh;
+  margin-left: 4vh;
   padding: 0.2em;
   }
 `;
@@ -28,7 +28,7 @@ const Container = styled.div`
   z-index: 2;
   background-color: #ebe1e1;
   border-radius: 20px;
-  margin-left: 4vw;
+  margin-left: 6vw;
   margin-top: 8vh;
   box-shadow: 6px 3px 4px gray;
   font-size: 30px;
@@ -39,7 +39,7 @@ const Container = styled.div`
     z-index: 2;
     background-color: #ebe1e1;
     border-radius: 20px;
-    margin-left: 4vw;
+    margin-left: 6vw;
     margin-top: 8vh;
     box-shadow: 6px 3px 4px gray;
     font-size: 16px;

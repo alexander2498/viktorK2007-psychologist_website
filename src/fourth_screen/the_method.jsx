@@ -14,7 +14,7 @@ export default function The_method() {
 const Text = styled.p`
     font-size: 50px;
   font-family: "Bad Script", cursive;
-  margin-left: 3vw;
+  margin-left: 6vw;
   @media (max-width: 1025px) {
     font-size: 37px;
     font-family: "Bad Script", cursive;
@@ -23,7 +23,7 @@ const Text = styled.p`
   @media (max-width: 1025px) {
     font-size: 28px;
     font-family: "Bad Script", cursive;
-    margin-left: 3vw;
+    margin-left: 6vw;
   }
   @media (max-width: 1025px) {
     font-size: 26px;

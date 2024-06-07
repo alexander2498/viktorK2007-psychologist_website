@@ -58,7 +58,7 @@ const Mstyles = styled.div`
 
 @media (max-width: 431px) {
     
-    display: none;
+   font-size:10px;
   
 }
 
