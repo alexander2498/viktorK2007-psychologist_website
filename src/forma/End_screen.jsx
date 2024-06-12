@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 export default function EndScreen() {
     return (
         <div >
-            <div class="volnaC"></div>
-            <Sogl class="sogl">
+            <div className="volnaC"></div>
+            <Sogl >
             <Link style={{ textDecoration: "none" }} to="/privacy">
-                <TextSogl class="text_sogl">©Пользовательское соглашение, копирайт</TextSogl>
+                <TextSogl >©Пользовательское соглашение, копирайт</TextSogl>
                 </Link>
             </Sogl>
         </div>

@@ -29,8 +29,6 @@ export default function Forma() {
         })
             .then((response) => response.json())
             .then((json) => {
-                console.log(json);
-                console.log("припиздярило");
             })
             .catch((error) => {
                 console.log(error);
@@ -65,21 +63,21 @@ export default function Forma() {
                         </FormName>
                         <FormBoxFlex>
                             <FormPhone >
-                                <input type="text" name="phone" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                                <InputPhone type="text" name="phone" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)} />
                             </FormPhone>
                             <FormEmail>
-                                <input type="email" name="email" placeholder="Электронная почта" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <InputEmail type="email" name="email" placeholder="Электронная почта" value={email} onChange={(e) => setEmail(e.target.value)} />
                             </FormEmail>
                         </FormBoxFlex>
                         <FormComment>
-                            <input type="text" name="comment" placeholder="Ваш комментарий" value={comment} onChange={(e) => setComment(e.target.value)} />
+                            <InputComment type="text" name="comment" placeholder="Ваш комментарий" value={comment} onChange={(e) => setComment(e.target.value)} />
                         </FormComment>
                         <ButtonZap onClick={openDialog} type="submit" className="button_zap">
-                            <Otpr className="otpr">Отправить</Otpr>
+                            <Otpr >Отправить</Otpr>
                         </ButtonZap>
                     </FormBox>
                     <Info >
-                        <div className="Logo" ></div>
+                        <div  ></div>
                     </Info>
                 </InfoFlex>
             </Form>
@@ -254,13 +252,42 @@ const FormPhone = styled.div`
     }
 `;
 
+const InputPhone = styled.input`
+    width:17vw;
+    @media (max-width: 431px) {
+        width:20vw;
+    }
+`
+
 const FormEmail = styled.div`
     border-bottom: 2px solid white;
     margin-left: 2vw;
     width: 17vw;
+
+    @media (max-width: 1024px) {
+        width: 22vw;
+    }
+    @media (max-width: 769px) {
+        width: 18vw;
+    }
+
     @media (max-width: 431px) {
     border-bottom: white 1px solid;
     margin-left: 2vw;
+    width: 32vw;
+    }
+`;
+
+const InputEmail = styled.input`
+    width: 17vw;
+
+@media (max-width: 1024px) {
+    width: 22vw;
+}
+@media (max-width: 769px) {
+    width: 18vw;
+}
+@media (max-width: 431px) {
     width: 32vw;
     }
 `;
@@ -275,6 +302,12 @@ const FormComment = styled.div`
     width: 50vw;
     margin-left: 0vw;
     margin-top: 9vh;
+    }
+`;
+const InputComment = styled.input`
+    width: 36vw;
+    @media (max-width: 431px) {
+    width: 50vw;
     }
 `;
 

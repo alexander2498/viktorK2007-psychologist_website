@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Girl_text() {
+export default function GirlText() {
   return (
     <Container >
 
@@ -18,8 +18,8 @@ export default function Girl_text() {
         метод и планируем количество встреч.
       </Text>
 
-      <Girl_text0>
-        <Girl_text1>
+      <GirlText0>
+        <GirlText1>
         •   обеспечение принципов уважения и безопасности, создание пространства
         для работы, которая происходит на глубинном уровне, и вера в каждого,<br />
         в Ваш потенциал.<br />
@@ -28,15 +28,15 @@ export default function Girl_text() {
         изменений
         от 2-х до 8-10 сессий<br />
         периодичностью раз в одну - полторы недели.<br />
-        </Girl_text1>
+        </GirlText1>
 
-      </Girl_text0>
+      </GirlText0>
 
     </Container>
   );
 }
 
-const Girl_text0 = styled.div`
+const GirlText0 = styled.div`
   display:none;
   @media (max-width: 431px) {
     display:block;
@@ -58,7 +58,7 @@ const Container = styled.div`
   margin-left: 3vw;
   margin-top: 8vh;
 `;
-const Girl_text1 = styled.p`
+const GirlText1 = styled.p`
  font-size: 10px;
     margin-left: 0vw;
     margin-top: -1vh;

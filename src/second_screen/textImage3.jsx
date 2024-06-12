@@ -1,7 +1,7 @@
 
 import styled from "styled-components";
 
-export default function Text_image_3() {
+export default function TextImage3() {
     return (
         <div className="conteiner_Text_title" >
             <Mstyles>

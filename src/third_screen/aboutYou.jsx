@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function About_you() {
+export default function AboutYou() {
     return (
         <div className="conteiner_Text_title" >
 

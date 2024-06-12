@@ -1,44 +1,41 @@
-import styled from "styled-components";
-import "../App.css"
-export default function MenuM() {
+import React, { useState } from 'react';
+import '../Burger.css';
+
+
+const BurgerMenu = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleToggle = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
-        <div >
-            <header className="header">
-                <div  className="containerr header__container">
-                    <button className="header__burgerBtn" id="burger">
-                        <span></span> <span ></span><span></span>
-                    </button>
-                    <nav className="menu">
-                        <ul className="menu__list">
-                            <li className="menu__item">
-                                <a className="menu__link" href="#methods">
-                                    <p className="text_main"> О методах</p>
-                                </a>
-                            </li>
-                            <li className="menu__item">
-                                <a className="menu__link" href="#seans">
-                                    <p  className="text_main">О сеансах</p>
-                                </a>
-                            </li>
-                            <li  className="menu__item">
-                                <a className="menu__link" href="#educationA">
-                                    <p className="text_main">Об образовании</p>
-                                </a>
-                            </li>
-                            <li className="menu__item">
-                                <a className="menu__link" href="#contacts">
-                                    <p className="text_main">Как связаться</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+        <div className='boxMenu' >
+            <div className={`burger ${isOpen ? 'open' : ''}`} onClick={handleToggle}>
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
+            </div>
+            <div className={`menu ${isOpen ? 'show' : ''}`}>
+                <div className='TextMenu' >
+                    <ul>
+                        <a href="#methods"  >
+                            <li>О методах</li>
+                        </a>
+                        <a href="#seans" >
+                            <li>О сеансах</li>
+                        </a>
+                        <a href="#education" >
+                            <li>Об образовании</li>
+                        </a>
+                        <a href='#forma' id='#' >
+                            <li>Как связаться</li>
+                        </a>
+                    </ul>
                 </div>
-            </header>
+            </div>
         </div>
     );
-}
+};
 
-
-
-
- 
+export default BurgerMenu;

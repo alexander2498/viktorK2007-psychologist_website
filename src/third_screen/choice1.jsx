@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
+
 import styled from "styled-components";
-export default function Choice_1({ }) {
+export default function Choice1({ }) {
     return (
 
         <Container >
@@ -16,10 +16,10 @@ const Text = styled.p`
     margin-top: 1vh;
   margin-left: 4vh;
   padding: 0.2em;
-  @media (max-width: 420px) {
-    margin-top: 1vh;
-  margin-left: 4vh;
-  padding: 0.2em;
+  @media (max-width: 430px) {
+    margin-left: 5vh;
+    padding: 0.5em;
+    margin-top:0;
   }
 `;
 const Container = styled.div`

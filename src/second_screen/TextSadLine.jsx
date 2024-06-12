@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export default function Text_sad_line() {
+export default function TextSadLine() {
     return (
         <div className="conteiner_Text_title" >
-            
-                <Text className="Text_title" > ПОЧЕМУ ПРОИСХОДЯТ
+
+            <Text className="Text_title" > ПОЧЕМУ ПРОИСХОДЯТ
                 ИЗМЕНЕНИЯ В НАШЕЙ ЖИЗНИ?</Text>
-           
+
         </div>
     );
 }
@@ -19,6 +19,13 @@ const Text = styled.p`
     width:62vw;
     margin-right:8vw;
     font-family:"Bad Script", cursive;
+
+    @media (max-width: 1024px) {
+        font-size: 40px;
+    text-align: right;
+    width: 62vw;
+    margin-right: 8vw;
+    }
 
  @media (max-width:769px) {
     font-size: 27px;

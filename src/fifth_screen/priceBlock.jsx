@@ -6,28 +6,28 @@ import styled from "styled-components";
 export default function PriceBlock({ }) {
     return (
 
-        <BlokFlex class="blok_flex">
-            <Blok1 class="blok_1">
-                <BlokBackground1 class="blok_backgound_1">
-                    <BlokBackground1Text1 class="blok_backgound_1_text1">
-                        <Price2 class="price_2"> СЕССИЯ ЗНАКОМСТВО
+        <BlokFlex >
+            <Blok1 >
+                <BlokBackground1 >
+                    <BlokBackground1Text1 >
+                        <Price2 > СЕССИЯ ЗНАКОМСТВО
                             4 000, продолжительность 60 мин</Price2>
                     </BlokBackground1Text1>
 
-                    <BlokBackground1Text2 class="blok_backgound_1_text2">
-                        <Price2 class="price_2"> СЕССИЯ КОУЧИНГА 45 минут 4 000</Price2>
+                    <BlokBackground1Text2 >
+                        <Price2 > СЕССИЯ КОУЧИНГА 45 минут 4 000</Price2>
                     </BlokBackground1Text2 >
                 </BlokBackground1>
             </Blok1 >
-            <VLine class="V_line"></VLine>
-            <Blok2 class="blok_2">
+            <VLine ></VLine>
+            <Blok2 >
 
-                <BlokBackground2 class="blok_backgound_2">
-                    <BlokBackground2Text1 class="blok_backgound_2_text1">
-                        <Price1 class="price_1"> ГУМАНИСТИЧЕСКИЙ ГИПНОЗ, АРТ-ТЕРАПИЯ до 1.30 мин, 5000 онлайн или 8000 очно </Price1>
+                <BlokBackground2 >
+                    <BlokBackground2Text1 >
+                        <Price1 > ГУМАНИСТИЧЕСКИЙ ГИПНОЗ, АРТ-ТЕРАПИЯ до 1.30 мин, 5000 онлайн или 8000 очно </Price1>
                     </BlokBackground2Text1>
-                    <BlokBackground2Text2 class="blok_backgound_2_text2">
-                        <Price1 class="price_1">
+                    <BlokBackground2Text2 >
+                        <Price1 >
                             РАБОТА С: группами, парами по запросу. работаю со взрослыми, подростками от 15 лет.</Price1>
 
                     </BlokBackground2Text2>

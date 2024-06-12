@@ -43,8 +43,6 @@ server.post("/api/feedback", async (req, res) => {
 
     await transporter.sendMail(mail);
     return res.status(200).send({
-      status: 200,
-      message: "success",
     });
   } catch (e) {
     return res.status(500).send({

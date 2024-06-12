@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import styled from "styled-components";
-export default function Choice_2({ }) {
+export default function Choice2({ }) {
     return (
 
         <Container  >

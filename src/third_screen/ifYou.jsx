@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 
-export default function Your_requests() {
+export default function IfYou() {
     return (
         <div className="conteiner_Text_title" >
 
-            <Text className="Text_title" >(ВАШИ ЗАПРОСЫ)</Text>
+            <Text className="Text_title" >  ...ЕСЛИ ВЫ</Text>
 
         </div>
     );
@@ -13,20 +13,20 @@ export default function Your_requests() {
 
 
 const Text = styled.p`
-    font-size: 26px;
+     font-size: 40px;
   font-family: "Bad Script", cursive;
-  margin-top: 10vh;
-  margin-left: 1vw;
+  margin-left: 14vw;
+  margin-top: 12vh;
   @media (max-width: 769px) {
-    font-size: 15px;
+    font-size: 27px;
     font-family: "Bad Script", cursive;
-    margin-top: 10vh;
-    margin-left: 1vw;
+    margin-left: 14vw;
+    margin-top: 12vh;
   }
   @media (max-width: 431px) {
-    font-size: 11px;
+    font-size: 26px;
     font-family: "Bad Script", cursive;
-    margin-left: 35vw;
-    margin-top: -2vh;
+    margin-left: 31vw;
+    margin-top: 0
   }
 `

@@ -4,6 +4,11 @@ import TopButton from "../buttons/topButton";
 import MenuM from "../buttons/menu";
 import { Box } from "@mui/material";
 import "../App.css"
+import BurgerMenu from "../buttons/menu";
+
+
+
+
 const MenuNone = styled.div`
     display: flex;
   margin-right: 2vw;
@@ -26,13 +31,21 @@ export default function MenuTitle() {
   return (
     <div>
       <MenuNone>
+        <a href="#methods"  >
         <TopButton border={'none'} backgroundColor={'rgba(255, 255, 255, 0.4)'} sign="о методах" />
+        </a>
+        <a href="#seans" >
         <TopButton border={'none'} backgroundColor={'rgba(255, 255, 255, 0.4)'} sign="о сеансах" />
+        </a>
+        <a href="#education" >  
         <TopButton border={'none'} backgroundColor={'rgba(255, 255, 255, 0.4)'} sign="об образовании" />
+        </a>
+        <a href="#forma" id="" >
         <TopButton border={'none'} backgroundColor={'rgba(255, 255, 255, 0.4)'} sign="как связаться" />
+        </a>
       </MenuNone>
       <MenuDisplay>
-        <MenuM />
+        <BurgerMenu />
       </MenuDisplay>
     </div>
   );

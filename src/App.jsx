@@ -1,35 +1,33 @@
 import './App.css';
 import ButtonSign from './buttons/buttonSign';
-import TopButton from './buttons/topButton';
 import Logoo from './buttons/pictures/logo';
 import Title from './title/title';
-import Text_title from './title/text_title';
-import Sab_text_text_title from './title/sab_text_title';
-import Text_sad_line from './second_screen/Text_sad_line';
-import Subtext_sad_line from './second_screen/Subtext_sad_line';
-import Text_image_3 from './second_screen/text_image_3';
-import About_you from './third_screen/about_you';
-import Your_requests from './third_screen/your_requests';
-import If_you from './third_screen/if_you';
-import About_text from './third_screen/about_text';
-import Choice_1 from './third_screen/choice_1';
-import Choice_2 from './third_screen/choice_2';
-import The_method from './fourth_screen/the_method';
+import TextTitle from './title/textTitle';
+import SabTextTextTitle from './title/sabTextTitle';
+import TextSadLine from './second_screen/TextSadLine';
+import SubtextSadLine from './second_screen/SubtextSadLine';
+import TextImage3 from './second_screen/textImage3';
+import AboutYou from './third_screen/aboutYou';
+import YourRequests from './third_screen/yourRequests';
+import IfYou from './third_screen/ifYou';
+import AboutText from './third_screen/aboutText';
+import Choice1 from './third_screen/choice1';
+import Choice2 from './third_screen/choice2';
+import TheMethod from './fourth_screen/theMethod';
 import Gipnoz from './fourth_screen/gipnoz';
-import Svg_boshka from './svg/svg_boshka';
+import SvgBoshka from './svg/svgBoshka';
 import Cist from './svg/Cist';
-import Svg_messeng from './svg/svg_messeng';
-import Crivaya_line from './svg/svg_crivaya_line';
+import SvgMesseng from './svg/svgMesseng';
+import CrivayaLine from './svg/svgCrivayaLine';
 import Wefy from './fifth_screen/Wefy';
-import Wefy_sText from './fifth_screen/Wefy_sText';
+import WefySText from './fifth_screen/WefySext';
 import Girl from './svg/girl';
-import Girl_text from './fifth_screen/girl_text';
+import GirlText from './fifth_screen/girlText';
 import Price from './fifth_screen/price';
-import List_1 from './svg/list_1';
-import List_2 from './svg/list_2';
+import List1 from './svg/list1';
+import List2 from './svg/list2';
 import Education from './fifth_screen/education';
-import Year_line from './svg/year_line';
-import Text_education from './fifth_screen/text_education';
+import TextEducation from './fifth_screen/textEducation';
 import PriceBlock from './fifth_screen/priceBlock';
 import Forma2 from './forma/forma2'
 import MenuTitle from './title/menuTitle';
@@ -47,7 +45,7 @@ import GirlText2 from './svg/GirlText2';
 function App() {
   return (
     <div>
-      <div className='background' style={styles.background} >
+      <div className='background' >
         <MenuTitle />
         <div className='box_logo'>
           <Logoo />
@@ -59,18 +57,18 @@ function App() {
         </a>
 
       </div>
-      <Text_title />
+      <TextTitle />
       <div className='grup_text_title'>
         <div className='image_3' ></div>
-        <Sab_text_text_title />
+        <SabTextTextTitle />
       </div>
 
       <div className='sad_line_flex'>
 
         <div className='sad_line'></div>
         <div className='box'>
-          <Text_sad_line />
-          <Subtext_sad_line />
+          <TextSadLine />
+          <SubtextSadLine />
 
         </div>
       </div >
@@ -79,39 +77,41 @@ function App() {
       <div className='text_image3_flex' >
 
 
-        <div className='box1' ><Text_image_3 /></div>
+        <div className='box1' ><TextImage3 /></div>
         <div className='Box233' >
-        <div className='image_3_background' ></div>
-        <div className='image_4' ></div>
+          <div className='image_3_background' ></div>
+          <div className='image_4' ></div>
         </div>
       </div>
       <div className='image3_line' ></div>
       <div className='class_image_5' ></div>
       <div className='box_you' >
-        <About_you />
-        <Your_requests />
-        <If_you />
+        <AboutYou />
+        <YourRequests />
+        <IfYou />
       </div>
       <div className='about_flex' >
         <div>
-          <About_text text={"— в поиске спокойствия, самоуважения и принятия себя"} />
-          <About_text text={"— ищите пути познания себя, других, ваших близких"} />
-          <About_text text={"— желаете изменить свою жизнь"} />
-          <About_text text={"— распрощаться с вредными привычками"} />
+          <AboutText text={"— в поиске спокойствия, самоуважения и принятия себя"} />
+          <AboutText text={"— ищите пути познания себя, других, ваших близких"} />
+          <AboutText text={"— желаете изменить свою жизнь"} />
+          <AboutText text={"— распрощаться с вредными привычками"} />
         </div>
         <div>
-          <About_text text={"— «проработать» свои страхи, желания, негативные эмоции"} />
-          <About_text text={"— реализовать новый проект, начать новый этап"} />
-          <About_text text={"— или просто чувствуете стремление к переменам и внутреннему росту"} />
+          <AboutText text={"— «проработать» свои страхи, желания, негативные эмоции"} />
+          <AboutText text={"— реализовать новый проект, начать новый этап"} />
+          <AboutText text={"— или просто чувствуете стремление к переменам и внутреннему росту"} />
         </div>
       </div>
 
-      <Choice_1 />
-      <Choice_2 />
+      <Choice1 />
+      <Choice2 />
       <div className='line_choice' ></div>
 
       <div className='The_method_flex' >
-        <The_method />
+      <a id='methods' >
+        <TheMethod />
+        </a>
         <div className='method_line' ></div>
       </div>
 
@@ -119,20 +119,21 @@ function App() {
       <Gipnoz2 text={`Эриксоновский коучинг может быть эффективным инструментом, если Вам необходимо планировать проект,приоритизировать задачи, найти решение или начать новый этап в Вашей жизни.\n\nМэрилин Аткинсон, основательница этого направления, считает, что изменить мир можно одной беседой!`} />
       <Gipnoz3 text={"Арт-терапия - это работа с вашими чувствами через искусство и творческое начало человека.\n\nАрт-терапия способствует саморазвитию и самовыражению, внутренней гармонизации человека.В каждом из нас есть творческое начало, ведь, как говорят, человек — это Творец своей судьбы, а искусство — это универсальный целитель-переводчик языка чувств и эмоций! Попробуйте и разрешите себе творить, в первую очередь, для самоисследования, для проживания и принятия себя и своих чувств."} />
 
-      <Svg_boshka />
+
+      <SvgBoshka />
       <Cist />
-      <Svg_messeng />
+      <SvgMesseng />
 
-
-      <Crivaya_line />
+      <a id='seans' ></a>
+      <CrivayaLine />
       <div className='box_relaative' >
         <Wefy />
-        <Wefy_sText />
+        <WefySText />
       </div>
 
       <div className='girl_text_flex' >
         <Girl />
-        <Girl_text />
+        <GirlText />
       </div>
       <GirlText2 />
       <Price />
@@ -141,34 +142,31 @@ function App() {
 
 
       <div className='list_grip' >
-        <List_1 />
-        <List_2 />
+        <List1 />
+        <List2 />
       </div>
+      <a id='education' >
       <Education />
+      </a>
       <div className='educationGrup' >
-        <Year_line />
-        <Text_education />
+        <TextEducation />
 
 
       </div>
       <div className='EndContainer'>
+      <a id='forma'>
         <Forma2 />
-
-        <a id='forma'>
-          <EndScreen />
         </a>
-        </div>
+
+        
+          <EndScreen />
+        
+      </div>
     </div>
   );
 }
 
 const styles = {
-  background: {
-    width: '100vw',
-    height: '100vh',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
   flex: {
     display: "flex",
     marginRight: "2vw",

@@ -76,7 +76,7 @@ export default function Girl({  }) {
             </g>
             <path
                 d="M15 132.002C55.8333 147.502 148 156.902 190 70.5016C232 -15.8984 335.091 0.349463 357.5 8.00061C378 15 430 64.0008 430 107.501"
-                stroke="black" stroke-width="0.4" />
+                stroke="black" strokeWidth="0.4" />
             <circle cx="139" cy="126" r="2" fill="#020202" />
             <circle cx="139" cy="126" r="2" fill="#020202" />
             <circle cx="139" cy="126" r="2" fill="#020202" />
@@ -88,8 +88,8 @@ export default function Girl({  }) {
             <circle cx="47" cy="140" r="2" fill="#020202" />
             <defs>
                 <filter id="filter0_d_913_3" x="161.215" y="81.5" width="246.904" height="280.693"
-                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                         result="hardAlpha" />
                     <feOffset dx="4" dy="4" />
@@ -100,8 +100,8 @@ export default function Girl({  }) {
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_913_3" result="shape" />
                 </filter>
                 <filter id="filter1_d_913_3" x="0.988281" y="229.5" width="140.088" height="99.7195"
-                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                         result="hardAlpha" />
                     <feOffset dy="4" />

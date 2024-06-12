@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function The_method() {
+export default function TheMethod() {
     return (
         <div className="conteiner_Text_title" >
 
@@ -21,11 +21,11 @@ const Text = styled.p`
     margin-left: 3vw;
   }
   @media (max-width: 1025px) {
-    font-size: 28px;
+    font-size: 35px;
     font-family: "Bad Script", cursive;
     margin-left: 6vw;
   }
-  @media (max-width: 1025px) {
+  @media (max-width: 769px) {
     font-size: 26px;
     font-family: "Bad Script", cursive;
     margin-left: 6vw;

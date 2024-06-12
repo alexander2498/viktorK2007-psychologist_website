@@ -56,7 +56,6 @@ p {
 .header__burger-btn span {
   position: absolute;
   width: 30px;
-  height: 3px;
   background-color: rgb(255, 255, 255);
   left: 5px;
   transition: transform .5s, opacity .5s, background-color .5s;
@@ -85,7 +84,7 @@ p {
 .header.open .header__burger-btn span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
 }
-  
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -160,14 +159,15 @@ textarea {
 
 .background {
   background-image: url(../public/img/bg.jpg);
-  height: 20vh;
   background-size: cover;
   background-position: center;
-  width: 20vw;
   animation: imj 10s infinite;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: -2vw;
+  width: 100vw;
+  height: 103vh;
 }
 
 @keyframes imj {
@@ -231,13 +231,13 @@ textarea {
 
 .image_3 {
   margin-left: 6vw;
-  box-shadow: 16px -13px 1px rgb(198, 191, 206);
-  border-radius: 35px;
+  box-shadow: 16px 13px 1px rgb(198, 191, 206);
+  border-radius: 13px;
   background-image: url(../public/img/image\ 2.png);
   background-size: cover;
   width: 20vw;
-  height: 33vh;
-  margin-top: 3vh;
+  height: 27vw;
+  margin-top: 2vh;
 }
 
 .grup_text_title {
@@ -258,11 +258,11 @@ textarea {
 .image_4 {
   background-image: url(../public/img/image3.png);
   width: 28vw;
-    height: 16vw;
-    background-size: cover;
-    position: absolute;
-    margin-left: 8vw;
-    margin-top: 6vh;
+  height: 16vw;
+  background-size: cover;
+  position: absolute;
+  margin-left: 8vw;
+  margin-top: 6vh;
 }
 
 .image3_line {
@@ -382,7 +382,7 @@ textarea {
 
 }
 
-.EndContainer{
+.EndContainer {
   background-color: #adbbdd;
   margin-top: 13vh;
   position: absolute;
@@ -394,6 +394,9 @@ textarea {
   .cartinca {
     width: 13vw;
     height: 13vw;
+  }
+  .The_method_flex{
+    margin-top: 48vh;
   }
 
 }
@@ -407,10 +410,10 @@ textarea {
   .image_3 {
     width: 27vw;
     height: 35vw;
-    box-shadow: 9px -8px 1px rgb(198, 191, 206);
+    box-shadow: 9px 8px 1px rgb(198, 191, 206);
   }
 
-  .image_4{
+  .image_4 {
     background-image: url("../public/img/image3.png");
     width: 35vw;
     height: 22vw;
@@ -420,7 +423,7 @@ textarea {
     margin-top: 4vh;
   }
 
-  .image_3_background{
+  .image_3_background {
     position: absolute;
     background-color: #81a0d0;
     width: 36vw;
@@ -437,6 +440,10 @@ textarea {
     height: 17vh;
     width: 11vw;
 
+  }
+
+  .The_method_flex{
+    margin-top: 40vh;
   }
 
   .svg_messeng {
@@ -470,6 +477,7 @@ textarea {
   .sad_line {
     width: 93vw;
   }
+
   input,
   textarea {
     background: none;
@@ -482,17 +490,29 @@ textarea {
 
 
 @media (max-width: 431px) {
+
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+
+  .EndContainer{
+    margin-top: 8vh;
+  }
+
   .grup {
     display: none;
   }
-  .sad_line{
+
+  .sad_line {
     border-top: 1px solid;
     margin-left: 4vw;
     margin-top: -3vh;
     background-size: cover;
   }
 
-  .Box233{
+  .Box233 {
     border-left: 1px solid black;
   }
 
@@ -502,15 +522,15 @@ textarea {
 
 
 
-  .image_3{
+  .image_3 {
     width: 27vw;
-        height: 35vw;
-        box-shadow: 6px -6px 1px rgb(198, 191, 206);
-        border-radius: 13px;
-        margin-top: 1vh;
+    height: 35vw;
+    box-shadow: 6px 6px 1px rgb(198, 191, 206);
+    border-radius: 5px;
+    margin-top: 1vh;
   }
 
-  
+
 
   .box_you {
     display: block;
@@ -550,26 +570,30 @@ textarea {
     border-bottom: 1px solid;
   }
 
-  .girl_text_flex{
-
-  }
+  .girl_text_flex {}
 
   .list_grip {
     display: none;
   }
-  .Logo{
+
+  .Logo {
     width: 12vw;
     height: 12vw;
     margin-left: 9vw;
   }
+
   .V_line {
     display: none;
   }
-  .crivaya_line{
+
+  .crivaya_line {
     margin-top: 74vw;
   }
 
-
+  .cartinca {
+    width: 25vw;
+    height: 25vw;
+  }
 
   .header__burger-btn {
     display: block;
@@ -607,4 +631,9 @@ textarea {
   .header__container {
     display: block;
   }
+
+  .volnaC{
+    margin-top: 18vh;
+  }
+
 }

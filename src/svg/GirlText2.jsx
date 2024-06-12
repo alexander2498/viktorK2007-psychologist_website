@@ -23,6 +23,7 @@ display:none;
     font-size: 10px;
     margin-left: 13vw;
     margin-top: -1vh;
+    display:block;
     }
 `;
 

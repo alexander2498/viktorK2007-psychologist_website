@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export default function Wefy_sText() {
+export default function WefySText() {
     return (
         <Container className="conteiner_Text_title"  >
 

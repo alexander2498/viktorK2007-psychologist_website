@@ -1,0 +1,64 @@
+
+  
+  .burger {
+    width: 30px;
+    height: 25px;
+    top: 20px; 
+    left: 20px; 
+    cursor: pointer;
+    transition: transform 0.5s;
+    z-index: 1001; 
+    position: relative;
+  }
+  
+
+
+
+  .burger div {
+    background-color: white;
+    height: 4px;
+    margin: 5px 0;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .burger.open .line1 {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .burger.open .line2 {
+    opacity: 0;
+  }
+  
+  .burger.open .line3 {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  
+  .menu {
+    width: 90.5%; 
+    height: 30vh;
+    background-color: #adbbdd;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    z-index: 1000;
+    
+  }
+
+ 
+  
+  .menu.show {
+    transform: translateX(0); 
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0;
+  }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Text_title() {
+export default function TextTitle() {
     return (
         <div className="conteiner_Text_title" >
             

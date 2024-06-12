@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+import { Box } from "@mui/material";
 import styled from "styled-components";
 
 const Text = styled.p`
@@ -12,30 +12,31 @@ const Text = styled.p`
   @media (max-width: 769px) {
     font-size: 29px;
   }
-`
-const Conteiner = styled.div`
+`;
+
+const Container = styled.div`
   border-radius: 50px;
   border: 3px solid white;
-  background-color: rgb(255, 255, 255, 0.4);
-`
-const Grup = styled.div`
+  background-color: rgba(255, 255, 255, 0.4);
+`;
+
+const Group = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 6vw;
   @media (max-width: 769px) {
     margin-top: 21vw;
   }
-`
+`;
 
-export default function ButtonSign({ sign, backgroundColor, border, }) {
-
-    return (
-        <Grup>
-            <Conteiner  border={border} backgroundColor={backgroundColor}>
-                <Text  >{sign}</Text>
-            </Conteiner>
-        </Grup>
-    );
+export default function ButtonSign({ sign, backgroundColor, border }) {
+  return (
+    <Group>
+      <Container style={{ border, backgroundColor }}>
+        <Text>{sign}</Text>
+      </Container>
+    </Group>
+  );
 }
 
 

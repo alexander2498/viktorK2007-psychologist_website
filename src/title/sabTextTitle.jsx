@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-export default function Sab_text_text_title() {
+export default function SabTextTextTitle() {
 
     return (
         <Mstyles>
@@ -27,9 +27,12 @@ export default function Sab_text_text_title() {
 
 const Mstyles = styled.div`
   font-family: Jost, sans-serif;
-  width: 51vw;
-  margin-left: 6vw ;
-  font-size:26px ;
+    width: 58vw;
+    margin-left: 7vw;
+    font-size: 25px;
+    margin-top: 6vh;
+    border-left: 1px solid;
+    padding-left: 3em;
 
 
 @media (max-width: 1024px) {
