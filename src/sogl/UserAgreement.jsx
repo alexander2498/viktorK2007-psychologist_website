@@ -109,7 +109,7 @@ export default function UserAgreement() {
     );
 }
 
-const Text = styled.p`
+const Text = styled.div`
     padding:5em;
 `
 const Container = styled.div`

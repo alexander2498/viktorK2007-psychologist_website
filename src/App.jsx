@@ -109,8 +109,8 @@ function App() {
       <div className='line_choice' ></div>
 
       <div className='The_method_flex' >
-      <a id='methods' >
-        <TheMethod />
+        <a id='methods' >
+          <TheMethod />
         </a>
         <div className='method_line' ></div>
       </div>
@@ -146,7 +146,7 @@ function App() {
         <List2 />
       </div>
       <a id='education' >
-      <Education />
+        <Education />
       </a>
       <div className='educationGrup' >
         <TextEducation />
@@ -154,13 +154,13 @@ function App() {
 
       </div>
       <div className='EndContainer'>
-      <a id='forma'>
-        <Forma2 />
+        <a id='forma'>
+          <Forma2 />
         </a>
 
-        
-          <EndScreen />
-        
+
+        <EndScreen />
+
       </div>
     </div>
   );

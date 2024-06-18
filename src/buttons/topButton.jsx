@@ -25,6 +25,7 @@ const Container = styled.div`
     justify-content:end;
 `;
 const Button = styled.div`
+    margin-top: 2vh;
     margin-left: 2vw;
     border-radius:50px;
     background-color: rgb(253, 226, 205, 0.7);
