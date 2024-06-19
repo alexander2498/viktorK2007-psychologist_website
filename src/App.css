@@ -269,7 +269,7 @@ textarea {
   width: 87vw;
   height: 7vh;
   border-top: black 1px solid;
-  margin-top: 5vh;
+  margin-top: 11vh;
   margin-left: 6vw;
 }
 
@@ -387,6 +387,20 @@ textarea {
   margin-top: 13vh;
   position: absolute;
   width: 100vw;
+}
+
+.infoLogo{
+  background-image: url(./assets/Logo.jpg);
+  width: 9vw;
+  height: 9vw;
+  background-size: cover;
+
+}
+
+.infoLogoContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
 }
 
 @media (max-width:1024px) {

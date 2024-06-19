@@ -14,7 +14,7 @@ export default function TextSadLine() {
 
 
 const Text = styled.p`
-    font-size:53px;
+    font-size:50px;
     text-align:right;
     width:62vw;
     margin-right:8vw;

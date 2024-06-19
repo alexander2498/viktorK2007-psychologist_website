@@ -12,7 +12,7 @@ export default function AboutYou() {
 
 
 const Text = styled.p`
-    font-size: 60px;
+    font-size: 50px;
   font-family: "Bad Script", cursive;
   margin-top: 4vh;
   margin-left: 6vw;

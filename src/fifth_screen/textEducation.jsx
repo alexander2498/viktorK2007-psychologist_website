@@ -24,7 +24,7 @@ export default function TextEducation() {
 
 const Container = styled.div`
      margin-top: 5vh;
-  margin-left: 3vw;
+  margin-left: 5vw;
   @media (max-width: 431px) {
         width: 92vw;
         background-color: #ebe0e0;

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export default function Girl({  }) {
+export default function Girl() {
     return (
-        
-        
-<GirlSvg  width="432" height="363" viewBox="0 0 432 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+        <GirlSvg width="432" height="363" viewBox="0 0 432 363" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="234" cy="21" r="2" fill="#020202" />
             <circle cx="234" cy="21" r="2" fill="#020202" />
             <circle cx="234" cy="21" r="2" fill="#020202" />
@@ -113,14 +113,15 @@ export default function Girl({  }) {
                 </filter>
             </defs>
         </GirlSvg>
-       
-        
+
+
     );
 }
 
 const GirlSvg = styled.svg`
 
-
+margin-top: 9vh;
+    margin-left: 5vw;
 @media (max-width: 769px) {
     width: 46vw;
     height: 40vh;
@@ -128,6 +129,6 @@ const GirlSvg = styled.svg`
 
 @media (max-width: 431px) {
    width: 40vw;
-    height: 23vh;
+   height: 23vh;
 }
 `

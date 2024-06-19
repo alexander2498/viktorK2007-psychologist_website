@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function List2({  }) {
+export default function List2() {
     return (
         
         
@@ -23,6 +23,10 @@ const Container = styled.svg`
     width:22vw;
     @media (max-width: 769px) {
         width: 33vw;
-    height: 40vh;
+        height: 40vh;
+    }
+    @media (max-width: 1024px) {
+        width: 34vw;
+        height: 35vh;
     }
 `

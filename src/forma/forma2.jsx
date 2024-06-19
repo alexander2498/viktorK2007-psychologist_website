@@ -76,9 +76,13 @@ export default function Forma() {
                             <Otpr >Отправить</Otpr>
                         </ButtonZap>
                     </FormBox>
+                    
                     <Info >
-                        <div  ></div>
+                        <div className="infoLogoContainer">
+                        <div className="infoLogo" ></div>
+                        </div>
                     </Info>
+                    
                 </InfoFlex>
             </Form>
         </>
@@ -115,6 +119,9 @@ const HowToContact = styled.div`
     color: white;
     margin-left: 8vw;
     padding-top: 4vh;
+    @media (max-width: 1024px) {
+        font-size:37px;
+    }
     @media (max-width: 769px) {
         font-size:31px
     }
@@ -129,10 +136,14 @@ const HowToContact = styled.div`
 
 const ContactText = styled.div`
     color: white;
-    margin-right: 8vw;
+    margin-right: 10.6vw;
     padding-top: 4vh;
     font-family: 'Jost', sans-serif;
     font-size: 50px;
+    @media (max-width: 1024px) {
+        font-size:37px;
+        margin-right:7vw;
+    }
     @media (max-width: 769px) {
         font-size:31px
     }
@@ -194,6 +205,7 @@ const FormBoxFlex = styled.div`
 
 const InfoFlex = styled.div`
     display: flex;
+    justify-content:space-between;
     height: 51vh;
 `;
 
@@ -201,15 +213,18 @@ const Info = styled.div`
     background-color: #9bb6e0;
     width: 22vw;
     height: 42vh;
-    margin-left: 6vw;
+    margin-right: 8vw;
     margin-top: 3vh;
     border-radius: 20px;
     border: 1px solid white;
+    @media (max-width: 1024px) {
+        margin-right:6vw
+    }
     @media (max-width: 431px) {
     background-color: #9bb6e0;
     width: 30vw;
     height: 32vh;
-    margin-left: 16vw;
+    margin-right: 2vw;
     margin-top: 7vh;
     border-radius: 20px;
     border: 1px solid white;
