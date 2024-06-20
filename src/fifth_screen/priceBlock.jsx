@@ -1,9 +1,8 @@
 
-import { Box } from "@mui/material";
-import PriceContainer from "./priceContainer";
+
 import styled from "styled-components";
 
-export default function PriceBlock({ }) {
+export default function PriceBlock() {
     return (
 
         <BlokFlex >
@@ -80,7 +79,7 @@ const BlokBackground1Text1 = styled.div`
             padding: 1em;
             font-size: 26px;
             border-bottom: 1px solid gray;
-            @media (max-width: 769px) {
+            @media (max-width: 820px) {
                 padding: 1em;
             font-size: 18px;
             border-bottom: 1px solid gray;
@@ -98,7 +97,7 @@ const BlokBackground1Text2 = styled.div`
             font-size: 26px;
             margin-top: 1vh;
             width: 30vw;
-            @media (max-width: 769px) {
+            @media (max-width: 820px) {
                 padding: 1em;
             font-size: 18px;
             padding-bottom: 2em;
@@ -130,7 +129,7 @@ const BlokBackground2 = styled.div`
             position: absolute;
             box-shadow: 13px 0px 0px rgb(227, 199, 202);
 
-            @media (max-width: 769px) {
+            @media (max-width: 820px) {
                 margin-left: 59vw;
             background-color: #ebe0e0;
             border-radius: 60px;
@@ -151,7 +150,7 @@ const BlokBackground2Text1 = styled.div`
             margin-top: 1vh;
             font-size: 26px;
             border-bottom: 1px solid gray;
-            @media (max-width: 769px) {
+            @media (max-width: 820px) {
              margin-top: 1vh;
             font-size: 18px;
             border-bottom: 1px solid gray;
@@ -167,7 +166,7 @@ const BlokBackground2Text2 = styled.div`
             font-size: 24px;
             margin-top: 1vh;
             width: 30vw;
-            @media (max-width: 769px) {
+            @media (max-width: 820px) {
                 font-size: 18px;
             margin-top: 1vh;
             width: 30vw;

@@ -176,15 +176,7 @@ function App() {
   );
 }
 
-const styles = {
-  flex: {
-    display: "flex",
-    marginRight: "2vw",
-    justifyContent: "flex-end",
-    paddingTop: "4vh",
-    fontSize: "26px"
-  },
-}
+
 
 
 

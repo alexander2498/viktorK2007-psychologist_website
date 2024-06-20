@@ -47,7 +47,7 @@ const Mstyles = styled.div`
     
 }
 
-@media (max-width: 769px) {
+@media (max-width: 820px) {
     padding-left: 1.5em;
     font-family: "Jost", sans-serif;
     margin-left: 4vw;

@@ -24,7 +24,7 @@ font-size: 26px;
     width: 68vw;
     padding: 1.5em;
   }
-  @media (max-width: 769px) {
+  @media (max-width: 820px) {
     font-size: 15px;
     font-family: "Jost", sans-serif;
     width: 68vw;
@@ -44,7 +44,7 @@ const Container = styled.div`
     box-shadow: 16px 13px 0px rgb(198, 191, 206);
     width:76vw;
 
-@media (max-width: 769px) {
+@media (max-width: 820px) {
     background-color: #f4eeee;
     border-radius: 69px;
     margin-left: 6vw;

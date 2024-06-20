@@ -16,7 +16,7 @@ export default function Wefy() {
 const Text = styled.p`
     font-family:"Bad Script", cursive;
     font-size:50px;
-    @media (max-width: 769px) {
+    @media (max-width: 820px) {
         font-size:27px;
     }
     @media (max-width: 550px) {

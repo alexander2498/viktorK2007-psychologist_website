@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+
 import styled from "styled-components";
 
 const Text = styled.p`
@@ -9,7 +9,7 @@ const Text = styled.p`
   font-size: 36px;
   color: white;
   font-family: "Jost", sans-serif;
-  @media (max-width: 769px) {
+  @media (max-width: 820px) {
     font-size: 29px;
   }
 `;

@@ -10,7 +10,7 @@ export default function Forma() {
     const [dialogIsOpen, setDialogIsOpen] = useState(false)
 
     const openDialog = () => setDialogIsOpen(true)
-  
+
     const closeDialog = () => setDialogIsOpen(false)
 
 
@@ -44,51 +44,51 @@ export default function Forma() {
             <FormPopup open={dialogIsOpen} onClose={closeDialog} />
             <Form>
 
-            <InfoFlex >
+                <InfoFlex >
 
 
-                <PustoDi>
-                    <HowToContact className="how_to_contact"><p>КАК СВЯЗАТЬСЯ</p></HowToContact>
-                    
-              
+                    <PustoDi>
+                        <HowToContact className="how_to_contact"><p>КАК СВЯЗАТЬСЯ</p></HowToContact>
 
-                
-                    <FormBox onSubmit={sendFeedback} className="form_box" >
-                        <Pismo width="24" height="18" viewBox="0 0 24 18" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.527344 5L11.9459 10.3333L23.3644 5M2.15856 1H21.7332C22.1658 1 22.5807 1.14048 22.8866 1.39052C23.1925 1.64057 23.3644 1.97971 23.3644 2.33333V15.6667C23.3644 16.0203 23.1925 16.3594 22.8866 16.6095C22.5807 16.8595 22.1658 17 21.7332 17H2.15856C1.72594 17 1.31103 16.8595 1.00512 16.6095C0.699204 16.3594 0.527344 16.0203 0.527344 15.6667V2.33333C0.527344 1.97971 0.699204 1.64057 1.00512 1.39052C1.31103 1.14048 1.72594 1 2.15856 1Z"
-                                stroke="white" />
-                        </Pismo>
 
-                        <FormName>
-                            <InputName type="text" name="name" placeholder="Имя" value={name} onChange={(e) => setName(e.target.value)} />
-                        </FormName>
-                        <FormBoxFlex>
-                            <FormPhone >
-                                <InputPhone type="text" name="phone" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)} />
-                            </FormPhone>
-                            <FormEmail>
-                                <InputEmail type="email" name="email" placeholder="Электронная почта" value={email} onChange={(e) => setEmail(e.target.value)} />
-                            </FormEmail>
-                        </FormBoxFlex>
-                        <FormComment>
-                            <InputComment type="text" name="comment" placeholder="Ваш комментарий" value={comment} onChange={(e) => setComment(e.target.value)} />
-                        </FormComment>
-                        <ButtonZap onClick={openDialog} type="submit" className="button_zap">
-                            <Otpr >Отправить</Otpr>
-                        </ButtonZap>
-                    </FormBox>
+
+
+                        <FormBox onSubmit={sendFeedback} className="form_box" >
+                            <Pismo width="24" height="18" viewBox="0 0 24 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.527344 5L11.9459 10.3333L23.3644 5M2.15856 1H21.7332C22.1658 1 22.5807 1.14048 22.8866 1.39052C23.1925 1.64057 23.3644 1.97971 23.3644 2.33333V15.6667C23.3644 16.0203 23.1925 16.3594 22.8866 16.6095C22.5807 16.8595 22.1658 17 21.7332 17H2.15856C1.72594 17 1.31103 16.8595 1.00512 16.6095C0.699204 16.3594 0.527344 16.0203 0.527344 15.6667V2.33333C0.527344 1.97971 0.699204 1.64057 1.00512 1.39052C1.31103 1.14048 1.72594 1 2.15856 1Z"
+                                    stroke="white" />
+                            </Pismo>
+
+                            <FormName>
+                                <InputName type="text" name="name" placeholder="Имя" value={name} onChange={(e) => setName(e.target.value)} />
+                            </FormName>
+                            <FormBoxFlex>
+                                <FormPhone >
+                                    <InputPhone type="text" name="phone" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                                </FormPhone>
+                                <FormEmail>
+                                    <InputEmail type="email" name="email" placeholder="Электронная почта" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                </FormEmail>
+                            </FormBoxFlex>
+                            <FormComment>
+                                <InputComment type="text" name="comment" placeholder="Ваш комментарий" value={comment} onChange={(e) => setComment(e.target.value)} />
+                            </FormComment>
+                            <ButtonZap onClick={openDialog} type="submit" className="button_zap">
+                                <Otpr >Отправить</Otpr>
+                            </ButtonZap>
+                        </FormBox>
                     </PustoDi>
                     <PustoDiv>
-                    <ContactText className="contact_text"><p>КОНТАКТЫ</p></ContactText>
-                    <Info >
-                        <div className="infoLogoContainer">
-                        <div className="infoLogo" ></div>
-                        </div>
-                    </Info>
+                        <ContactText className="contact_text"><p>КОНТАКТЫ</p></ContactText>
+                        <Info >
+                            <div className="infoLogoContainer">
+                                <div className="infoLogo" ></div>
+                            </div>
+                        </Info>
                     </PustoDiv>
-                    
+
                 </InfoFlex>
             </Form>
         </>
@@ -114,10 +114,7 @@ const Form = styled.div`
     }
 `;
 
-const FlexContact = styled.div`
-    display: flex;
-    justify-content: space-between;
-`;
+
 
 const PustoDiv = styled.div`
     margin-right: 4vw;
@@ -137,7 +134,7 @@ const HowToContact = styled.div`
     @media (max-width: 1024px) {
         font-size:37px;
     }
-    @media (max-width: 769px) {
+    @media (max-width: 820px) {
         font-size:31px
     }
     @media (max-width: 550px) {
@@ -158,7 +155,7 @@ const ContactText = styled.div`
     @media (max-width: 1024px) {
         font-size:37px;
     }
-    @media (max-width: 769px) {
+    @media (max-width: 820px) {
         font-size:31px
     }
     @media (max-width: 550px) {
@@ -194,7 +191,7 @@ const Otpr = styled.p`
     color: white;
     font-family: 'Jost', sans-serif;
     padding: 0.5em;
-    @media (max-width: 769px) {
+    @media (max-width: 820px) {
         font-size: 19px;
     color: white;
     font-family: "Jost", sans-serif;
@@ -295,7 +292,7 @@ const FormEmail = styled.div`
     @media (max-width: 1024px) {
         width: 22vw;
     }
-    @media (max-width: 769px) {
+    @media (max-width: 820px) {
         width: 18vw;
     }
 
@@ -312,7 +309,7 @@ const InputEmail = styled.input`
 @media (max-width: 1024px) {
     width: 22vw;
 }
-@media (max-width: 769px) {
+@media (max-width: 820px) {
     width: 18vw;
 }
 @media (max-width: 550px) {

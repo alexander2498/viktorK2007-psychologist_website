@@ -33,7 +33,7 @@ const Container = styled.div`
   box-shadow: 6px 3px 4px gray;
   font-size: 30px;
   font-family: "Jost", sans-serif;
-  @media (max-width: 769px) {
+  @media (max-width: 820px) {
     position: absolute;
     width: 38vw;
     z-index: 2;

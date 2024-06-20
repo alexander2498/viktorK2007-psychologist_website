@@ -46,7 +46,7 @@ const GirlText0 = styled.div`
 const Text = styled.p`
     font-size: 26px;
   font-family: "Jost", sans-serif;
-  @media (max-width: 769px) {
+  @media (max-width: 820px) {
     font-size: 16px;
   }
   @media (max-width: 550px) {

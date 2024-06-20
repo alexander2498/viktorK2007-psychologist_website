@@ -15,7 +15,7 @@ const Text = styled.p`
      font-size: 26px;
   font-family: "Jost", sans-serif;
   
-  @media (max-width: 769px) {
+  @media (max-width: 820px) {
     font-size: 18px;
     font-family: "Jost", sans-serif;
     

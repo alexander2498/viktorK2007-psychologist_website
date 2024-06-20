@@ -27,7 +27,7 @@ const Text = styled.p`
     margin-right: 8vw;
     }
 
- @media (max-width:769px) {
+ @media (max-width:820px) {
     font-size: 27px;
         text-align: left;
         width: 75vw;
