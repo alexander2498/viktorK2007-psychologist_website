@@ -16,10 +16,10 @@ const Text = styled.p`
     font-size:26px;
     margin-top:3vh;
     @media (max-width: 769px) {
-        font-size:16px;
+        font-size:12px;
         margin-top:4vh;
     }
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         font-size:12px;
     }
 `

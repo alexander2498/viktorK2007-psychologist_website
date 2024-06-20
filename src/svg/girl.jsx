@@ -127,8 +127,8 @@ margin-top: 9vh;
     height: 40vh;
 }
 
-@media (max-width: 431px) {
-   width: 40vw;
-   height: 23vh;
+@media (max-width: 550px) {
+    width: 67vw;
+    height: 24vh;
 }
 `

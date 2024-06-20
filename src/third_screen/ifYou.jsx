@@ -23,10 +23,12 @@ const Text = styled.p`
     margin-left: 14vw;
     margin-top: 12vh;
   }
-  @media (max-width: 431px) {
-    font-size: 26px;
+  @media (max-width: 550px) {
+    font-size: 18px;
     font-family: "Bad Script", cursive;
-    margin-left: 31vw;
+    margin-left: 0;
+    display:flex;
+    justify-content:center;
     margin-top: 0
   }
 `

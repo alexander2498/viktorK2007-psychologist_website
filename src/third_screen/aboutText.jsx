@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+
 import styled from "styled-components";
 export default function AboutText({  text }) {
     return (
@@ -20,14 +20,18 @@ const Text = styled.p`
     font-family: "Jost", sans-serif;
     
   }
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     font-size: 13px;
     font-family: "Jost", sans-serif;
-    
-    width: 81vw;
+    width:70vw
   }
 `;
 const Container = styled.div`
-    margin-left: 6vw;
+margin-left:6vw;
+margin-top:3vh;
+  @media (max-width: 550px){
+    display:flex;
+    justify-content:center;
     margin-top: 3vh;
+    }
 `;

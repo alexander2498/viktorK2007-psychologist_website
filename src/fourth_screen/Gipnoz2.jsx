@@ -26,10 +26,10 @@ font-size: 26px;
   @media (max-width: 769px) {
     font-size: 16px;
     font-family: "Jost", sans-serif;
-    width: 74vw;
+    width: 68vw;
     padding: 1.5em;
   }
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     font-size: 11px;
     font-family: "Jost", sans-serif;
     width: 49vw;
@@ -39,23 +39,16 @@ font-size: 26px;
 const Container = styled.div`
   background-color: #f4eeee;
     border-radius: 69px;
-    margin-top: 47vh;
-    margin-left: 18vw;
-    position: absolute;
+    margin-left: 4vw;
     box-shadow: 16px 13px 0px rgb(226, 182, 182);
 
 @media (max-width: 769px) {
     background-color: #f4eeee;
-    border-radius: 69px;
-    margin-top: 35vh;
-    margin-left: 17vw;
-    position: absolute;
+    margin-left: 4vw;
     box-shadow: 9px 7px 0px rgb(226, 182, 182);
 }
-@media (max-width: 431px) {
-    border-radius: 69px;
-        margin-top: 36vh;
-        margin-left: 34vw;
+@media (max-width: 550px) {
+        margin-left: 4vw;
         box-shadow: 0px 13px 0px rgb(226, 182, 182);
         background-color: #EAEAEA;
 }

@@ -18,15 +18,17 @@ const Text = styled.p`
   margin-top: 10vh;
   margin-left: 1vw;
   @media (max-width: 769px) {
-    font-size: 15px;
+    font-size: 12px;
     font-family: "Bad Script", cursive;
     margin-top: 10vh;
     margin-left: 1vw;
   }
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     font-size: 11px;
     font-family: "Bad Script", cursive;
-    margin-left: 35vw;
+    margin-left: 0;
+    display:flex;
+    justify-content:center;
     margin-top: -2vh;
   }
 `

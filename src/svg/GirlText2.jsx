@@ -18,11 +18,11 @@ export default function GirlText2() {
 
 const Girl_text2 = styled.p`
 display:none;
-@media (max-width: 431px){
+@media (max-width: 550px){
   font-family: "Jost", sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     margin-left: 13vw;
-    margin-top: -1vh;
+    margin-top: 1vh;
     display:block;
     }
 `;

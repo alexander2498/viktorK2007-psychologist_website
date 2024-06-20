@@ -20,14 +20,13 @@ const Text = styled.p`
     font-family: "Bad Script", cursive;
     margin-left: 3vw;
   }
-  @media (max-width: 1025px) {
-    font-size: 35px;
+
+  @media (max-width: 769px) {
+    font-size: 27px;
     font-family: "Bad Script", cursive;
     margin-left: 6vw;
   }
-  @media (max-width: 769px) {
-    font-size: 26px;
-    font-family: "Bad Script", cursive;
-    margin-left: 6vw;
+  @media (max-width: 550px){
+    font-size:18px;
   }
 `;

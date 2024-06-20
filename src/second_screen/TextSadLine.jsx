@@ -35,4 +35,7 @@ const Text = styled.p`
         font-family: "Bad Script", cursive;
         margin-top: 4vw;
  }
+ @media (max-width: 550px) {
+    font-size:18px;
+ }
 `

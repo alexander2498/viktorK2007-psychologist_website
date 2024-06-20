@@ -44,12 +44,15 @@ export default function Forma() {
             <FormPopup open={dialogIsOpen} onClose={closeDialog} />
             <Form>
 
-                <FlexContact className="flex_contact">
-                    <HowToContact className="how_to_contact"><p>КАК СВЯЗАТЬСЯ</p></HowToContact>
-                    <ContactText className="contact_text"><p>КОНТАКТЫ</p></ContactText>
-                </FlexContact>
+            <InfoFlex >
 
-                <InfoFlex >
+
+                <PustoDi>
+                    <HowToContact className="how_to_contact"><p>КАК СВЯЗАТЬСЯ</p></HowToContact>
+                    
+              
+
+                
                     <FormBox onSubmit={sendFeedback} className="form_box" >
                         <Pismo width="24" height="18" viewBox="0 0 24 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -76,12 +79,15 @@ export default function Forma() {
                             <Otpr >Отправить</Otpr>
                         </ButtonZap>
                     </FormBox>
-                    
+                    </PustoDi>
+                    <PustoDiv>
+                    <ContactText className="contact_text"><p>КОНТАКТЫ</p></ContactText>
                     <Info >
                         <div className="infoLogoContainer">
                         <div className="infoLogo" ></div>
                         </div>
                     </Info>
+                    </PustoDiv>
                     
                 </InfoFlex>
             </Form>
@@ -98,7 +104,7 @@ const Form = styled.div`
     margin-left: 10vw;
     border-radius: 26px;
     margin-top: 16vh;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     box-shadow: 5px 5px 15px grey;
     background-color: #8ba7d3;
     width: 94vw;
@@ -113,43 +119,50 @@ const FlexContact = styled.div`
     justify-content: space-between;
 `;
 
+const PustoDiv = styled.div`
+    margin-right: 4vw;
+`;
+const PustoDi = styled.div`
+width: 60vw;
+`;
+
+
 const HowToContact = styled.div`
     font-family: 'Jost', sans-serif;
     font-size: 50px;
     color: white;
-    margin-left: 8vw;
     padding-top: 4vh;
+    display:flex;
+    justify-content:center;
     @media (max-width: 1024px) {
         font-size:37px;
     }
     @media (max-width: 769px) {
         font-size:31px
     }
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         font-family: "Jost", sans-serif;
     font-size: 19px;
     color: white;
-    margin-left: 8vw;
     padding-top: 4vh;
     }
 `;
 
 const ContactText = styled.div`
     color: white;
-    margin-right: 10.6vw;
     padding-top: 4vh;
     font-family: 'Jost', sans-serif;
     font-size: 50px;
+    display:flex;
+    justify-content:center;
     @media (max-width: 1024px) {
         font-size:37px;
-        margin-right:7vw;
     }
     @media (max-width: 769px) {
         font-size:31px
     }
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         color: white;
-    margin-right: 5vw;
     padding-top: 4vh;
     font-family: "Jost", sans-serif;
     font-size: 19px;
@@ -160,6 +173,7 @@ const FormBox = styled.form`
     width: 40vw;
     margin-left: 4vw;
     padding-top: 2vh;
+
 `;
 
 const ButtonZap = styled.button`
@@ -168,7 +182,7 @@ const ButtonZap = styled.button`
     border-radius: 27px;
     background-color: rgba(255, 255, 255, 0.31);
     border: none;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         margin-left: 22vw;
     margin-top: 5vh;
     }
@@ -186,7 +200,7 @@ const Otpr = styled.p`
     font-family: "Jost", sans-serif;
     padding: 0.5em;
     }
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     font-size: 12px;
     color: white;
     font-family: "Jost", sans-serif;
@@ -197,7 +211,7 @@ const Otpr = styled.p`
 const FormBoxFlex = styled.div`
     display: flex;
     margin-top: 3vh;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     display: flex;
     margin-top: 11vh;
     } 
@@ -206,25 +220,24 @@ const FormBoxFlex = styled.div`
 const InfoFlex = styled.div`
     display: flex;
     justify-content:space-between;
-    height: 51vh;
+    height: 58vh;
 `;
 
 const Info = styled.div`
     background-color: #9bb6e0;
     width: 22vw;
     height: 42vh;
-    margin-right: 8vw;
     margin-top: 3vh;
     border-radius: 20px;
     border: 1px solid white;
+    display:flex;
+    justify-content:center;
     @media (max-width: 1024px) {
-        margin-right:6vw
     }
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     background-color: #9bb6e0;
     width: 30vw;
     height: 32vh;
-    margin-right: 2vw;
     margin-top: 7vh;
     border-radius: 20px;
     border: 1px solid white;
@@ -233,7 +246,7 @@ const Info = styled.div`
 
 const Pismo = styled.svg`
     margin-left: 36.5vw;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         margin-left: 45.5vw;
         width: 4vw;
     }
@@ -244,7 +257,7 @@ const FormName = styled.div`
     width: 36vw;
     margin-left: 2vw;
     margin-top: 3vh;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     border-bottom: white 1px solid;
     width: 50vw;
     margin-left: 0vw;
@@ -260,7 +273,7 @@ const FormPhone = styled.div`
     border-bottom: 2px solid white;
     margin-left: 2vw;
     width: 17vw;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     border-bottom: white 1px solid;
     margin-left: 0vw;
     width: 20vw;
@@ -269,7 +282,7 @@ const FormPhone = styled.div`
 
 const InputPhone = styled.input`
     width:17vw;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         width:20vw;
     }
 `
@@ -286,7 +299,7 @@ const FormEmail = styled.div`
         width: 18vw;
     }
 
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     border-bottom: white 1px solid;
     margin-left: 2vw;
     width: 32vw;
@@ -302,7 +315,7 @@ const InputEmail = styled.input`
 @media (max-width: 769px) {
     width: 18vw;
 }
-@media (max-width: 431px) {
+@media (max-width: 550px) {
     width: 32vw;
     }
 `;
@@ -312,7 +325,7 @@ const FormComment = styled.div`
     width: 36vw;
     margin-left: 2vw;
     margin-top: 6vh;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     border-bottom: white 1px solid;
     width: 50vw;
     margin-left: 0vw;
@@ -321,7 +334,7 @@ const FormComment = styled.div`
 `;
 const InputComment = styled.input`
     width: 36vw;
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
     width: 50vw;
     }
 `;

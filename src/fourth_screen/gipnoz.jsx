@@ -21,16 +21,16 @@ font-size: 26px;
   @media (max-width: 1025px) {
     font-size: 20px;
     font-family: "Jost", sans-serif;
-    width: 74vw;
+    width: 68vw;
     padding: 1.5em;
   }
   @media (max-width: 769px) {
     font-size: 15px;
     font-family: "Jost", sans-serif;
-    width: 74vw;
+    width: 68vw;
     padding: 1.5em;
   }
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     font-size: 11px;
     font-family: "Jost", sans-serif;
     width: 49vw;
@@ -40,25 +40,23 @@ font-size: 26px;
 const Container = styled.div`
    background-color: #f4eeee;
     border-radius: 69px;
-    margin-top: 6vh;
-    margin-left: 6vw;
-    position: absolute;
+    margin-left: 4vw;
     box-shadow: 16px 13px 0px rgb(198, 191, 206);
+    width:76vw;
 
 @media (max-width: 769px) {
     background-color: #f4eeee;
     border-radius: 69px;
-    margin-top: 7vh;
     margin-left: 6vw;
-    position: absolute;
     box-shadow: 9px 7px 0px rgb(198, 191, 206);
 }
-@media (max-width: 431px) {
+@media (max-width: 550px) {
     background-color: #EDDADA;
         border-radius: 69px;
         margin-top: 3vh;
-        margin-left: 12vw;
+        margin-left: 8vw;
         box-shadow: 0px 10px 0px rgb(198, 191, 206);
+        width:60vw;
 }
 
 `;

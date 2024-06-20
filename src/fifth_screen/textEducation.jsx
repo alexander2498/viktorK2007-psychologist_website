@@ -24,9 +24,9 @@ export default function TextEducation() {
 
 const Container = styled.div`
      margin-top: 5vh;
-  margin-left: 5vw;
-  @media (max-width: 431px) {
-        width: 92vw;
+  margin-left: 4vw;
+  @media (max-width: 550px) {
+        width: 91vw;
         background-color: #ebe0e0;
         border-radius: 30px;
         box-shadow: 10px 0px 1px rgb(192, 206, 191);
@@ -34,10 +34,11 @@ const Container = styled.div`
 `
 const Text = styled.p`
     font-size: 28px;
+    font-family: "Jost", sans-serif;
     @media (max-width: 769px) {
         font-size: 19px;
     }
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         font-size: 13px;
         width:80vw;
         padding: 1em;

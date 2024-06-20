@@ -38,7 +38,7 @@ export default function GirlText() {
 
 const GirlText0 = styled.div`
   display:none;
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     display:block;
   }
 `;
@@ -49,7 +49,7 @@ const Text = styled.p`
   @media (max-width: 769px) {
     font-size: 16px;
   }
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     display:none;
   }
 `;
@@ -59,7 +59,7 @@ const Container = styled.div`
   margin-top: 8vh;
 `;
 const GirlText1 = styled.p`
- font-size: 10px;
+ font-size: 11px;
     margin-left: 0vw;
-    margin-top: -1vh;
+    font-family: "Jost", sans-serif;
 `;

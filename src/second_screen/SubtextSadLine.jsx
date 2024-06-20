@@ -23,8 +23,8 @@ const Text = styled.p`
     font-family: "Jost", sans-serif;
     margin-left:6vw;
   }
-  @media (max-width: 420px) {
-    font-size: 16px;
+  @media (max-width: 550px) {
+    font-size: 12px;
   }
 `;
 

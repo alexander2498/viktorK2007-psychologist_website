@@ -17,14 +17,16 @@ const Text = styled.p`
   margin-top: 4vh;
   margin-left: 6vw;
   @media (max-width: 769px) {
-    font-size: 35px;
+    font-size: 27px;
     font-family: "Bad Script", cursive;
     margin-top: 4vh;
     margin-left: 6vw;
   }
-  @media (max-width: 431px) {
-    font-size: 26px;
+  @media (max-width: 550px) {
+    font-size: 18px;
     font-family: "Bad Script", cursive;
-    margin-left: 37vw;
+    margin-left: 0;
+    display:flex;
+    justify-content:center;
   }
 `

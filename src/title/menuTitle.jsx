@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import TopButton from "../buttons/topButton";
-import MenuM from "../buttons/menu";
-import { Box } from "@mui/material";
 import "../App.css"
 import BurgerMenu from "../buttons/menu";
 
@@ -15,14 +13,14 @@ const MenuNone = styled.div`
   justify-content: flex-end;
   padding-top: 4vh;
   font-size: 26px;
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     display: none;
   }
 `;
 
 const MenuDisplay = styled.div`
   display: none;
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     display: block;
   }
 `;

@@ -37,7 +37,6 @@ const Mstyles = styled.div`
 
 @media (max-width: 1024px) {
         color: black;
-        height: 31vh;
         padding-left: 1.5em;
         font-family: "Jost", sans-serif;
         margin-left: 4vw;
@@ -49,7 +48,6 @@ const Mstyles = styled.div`
 }
 
 @media (max-width: 769px) {
-    height: 31vh;
     padding-left: 1.5em;
     font-family: "Jost", sans-serif;
     margin-left: 4vw;
@@ -59,7 +57,7 @@ const Mstyles = styled.div`
     margin-top: 0vh;
 }
 
-@media (max-width: 431px) {
+@media (max-width: 550px) {
     
    font-size:10px;
   

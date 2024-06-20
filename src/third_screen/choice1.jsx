@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
-export default function Choice1({ }) {
+export default function Choice1() {
     return (
 
         <Container >
@@ -16,7 +16,7 @@ const Text = styled.p`
     margin-top: 1vh;
   margin-left: 4vh;
   padding: 0.2em;
-  @media (max-width: 430px) {
+  @media (max-width: 550px) {
     margin-left: 5vh;
     padding: 0.5em;
     margin-top:0;
@@ -45,7 +45,7 @@ const Container = styled.div`
     font-size: 16px;
     font-family: "Jost", sans-serif;
   }
-  @media (max-width: 431px) {
+  @media (max-width: 550px) {
     position: absolute;
     width: 60vw;
     z-index: 2;

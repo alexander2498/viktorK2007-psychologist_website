@@ -11,19 +11,15 @@ export default function Wefy() {
 }
 
 
-const styles = {
-    style: {
-        fontFamily: '"Bad Script", cursive', fontSize: "50px"
-    }
-}
+
 
 const Text = styled.p`
     font-family:"Bad Script", cursive;
     font-size:50px;
     @media (max-width: 769px) {
-        font-size:33px;
+        font-size:27px;
     }
-    @media (max-width: 431px) {
+    @media (max-width: 550px) {
         font-size:26px;
         text-align: left;
     }

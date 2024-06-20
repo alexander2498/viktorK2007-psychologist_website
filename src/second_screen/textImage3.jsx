@@ -39,7 +39,7 @@ const Mstyles = styled.div`
     margin-right: 1vw;
     
 }
-@media (max-width: 431px) {
+@media (max-width: 550px) {
     font-family: "Jost", sans-serif;
     width: 51vw;
     margin-left: 6vw;
