@@ -65,8 +65,12 @@ const BlokBackground1 = styled.div`
             position: absolute;
             margin-left: 10vw;
             box-shadow: 14px 0px 0px rgb(128, 160, 208);
+            height: 44vh;
+            width: 35vw;
+            margin-left:60vw;
             @media (max-width: 550px) {
                 width: 91vw;
+                height:auto;
     background-color: #ebe0e0;
     border-radius: 30px;
     position: absolute;
@@ -81,7 +85,7 @@ const BlokBackground1Text1 = styled.div`
             border-bottom: 1px solid gray;
             @media (max-width: 820px) {
                 padding: 1em;
-            font-size: 18px;
+            font-size: 16px;
             border-bottom: 1px solid gray;
             margin-top: 1vh;
     }
@@ -99,7 +103,7 @@ const BlokBackground1Text2 = styled.div`
             width: 30vw;
             @media (max-width: 820px) {
                 padding: 1em;
-            font-size: 18px;
+            font-size: 16px;
             padding-bottom: 2em;
     }
     @media (max-width: 550px) {
@@ -128,9 +132,12 @@ const BlokBackground2 = styled.div`
             border-radius: 60px;
             position: absolute;
             box-shadow: 13px 0px 0px rgb(227, 199, 202);
+            height: 44vh;
+            width: 35vw;
+            margin-left:5vw;
 
             @media (max-width: 820px) {
-                margin-left: 59vw;
+                margin-left: 5vw;
             background-color: #ebe0e0;
             border-radius: 60px;
             position: absolute;
@@ -139,6 +146,7 @@ const BlokBackground2 = styled.div`
     @media (max-width: 550px) {
         margin-left: 4vw;
     width: 91vw;
+    height:auto;
     background-color: #ebe0e0;
     border-radius: 30px;
     position: absolute;
@@ -152,7 +160,7 @@ const BlokBackground2Text1 = styled.div`
             border-bottom: 1px solid gray;
             @media (max-width: 820px) {
              margin-top: 1vh;
-            font-size: 18px;
+            font-size: 16px;
             border-bottom: 1px solid gray;
             
     }
@@ -167,7 +175,7 @@ const BlokBackground2Text2 = styled.div`
             margin-top: 1vh;
             width: 30vw;
             @media (max-width: 820px) {
-                font-size: 18px;
+                font-size: 16px;
             margin-top: 1vh;
             width: 30vw;
         }

@@ -8,6 +8,8 @@ const TitleBox = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   marginTop: "5vh",
   fontSize: "60px",
+  textAlign: 'center',
+
   [theme.breakpoints.down('1301')]: {
     marginTop: "5vh",
     fontSize: "55px"
@@ -24,11 +26,9 @@ const TitleBox = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
     marginTop: "10vh",
-    width: "60vw",
     height: "19vh",
-    marginLeft: "20vw",
     textAlign: "center",
-    fontSize: "30px"
+    fontSize: "26px"
   },
 }));
 
