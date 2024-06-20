@@ -4,7 +4,7 @@ export default function Choice1() {
     return (
 
         <Container >
-            <Text >у вас есть ВЫБОР как это сделать!</Text>
+            <Text >У Вас есть ВЫБОР как это сделать!</Text>
         </Container>
 
     );

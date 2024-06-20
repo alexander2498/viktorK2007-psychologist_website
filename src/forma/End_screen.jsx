@@ -8,7 +8,7 @@ export default function EndScreen() {
             <div className="volnaC"></div>
             <Sogl >
             <Link style={{ textDecoration: "none" }} to="/privacy">
-                <TextSogl >©Пользовательское соглашение, копирайт</TextSogl>
+                <TextSogl >©Пользовательское соглашение; предложение не является публичной офертой</TextSogl>
                 </Link>
             </Sogl>
         </div>

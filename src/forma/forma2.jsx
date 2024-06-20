@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import FormPopup from "./formPopUp";
+import { Typography } from "@mui/material";
 export default function Forma() {
 
     const [name, setName] = useState('');
@@ -86,6 +87,7 @@ export default function Forma() {
                             <div className="infoLogoContainer">
                                 <div className="infoLogo" ></div>
                             </div>
+                            <Typography>AP.artatelier.ru@mail.ru</Typography>
                         </Info>
                     </PustoDiv>
 
