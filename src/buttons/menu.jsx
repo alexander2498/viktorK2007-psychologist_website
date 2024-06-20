@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Burger.css';
+import styled from 'styled-components';
 
 
 const BurgerMenu = () => {
@@ -20,16 +21,16 @@ const BurgerMenu = () => {
                 <div className='TextMenu' >
                     <ul>
                         <a href="#methods"  >
-                            <li>О методах</li>
+                            <li><Text>О методах</Text></li>
                         </a>
                         <a href="#seans" >
-                            <li>О сеансах</li>
+                            <li><Text>О сеансах</Text></li>
                         </a>
                         <a href="#education" >
-                            <li>Об образовании</li>
+                            <li><Text>Об образовании</Text></li>
                         </a>
                         <a href='#forma' id='#' >
-                            <li>Как связаться</li>
+                            <li><Text>Как связаться</Text></li>
                         </a>
                     </ul>
                 </div>
@@ -37,5 +38,9 @@ const BurgerMenu = () => {
         </div>
     );
 };
+
+const Text = styled.p`
+    font-family: "Jost", sans-serif;
+`
 
 export default BurgerMenu;
