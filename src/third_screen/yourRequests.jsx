@@ -24,7 +24,7 @@ const Text = styled.p`
     margin-left: 1vw;
   }
   @media (max-width: 550px) {
-    font-size: 11px;
+    font-size: 12px;
     font-family: "Bad Script", cursive;
     margin-left: 0;
     display:flex;

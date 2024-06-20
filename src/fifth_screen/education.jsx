@@ -22,9 +22,9 @@ const Text = styled.p`
     margin-top: 10vh;
   }
   @media (max-width: 550px) {
-    font-size: 26px;
+    font-size: 18px;
     font-family: "Bad Script", cursive;
-    margin-left: 3vw;
+    margin-left: 6vw;
     margin-top: 49vh;
   }
 `

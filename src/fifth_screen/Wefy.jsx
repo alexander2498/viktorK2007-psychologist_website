@@ -20,7 +20,7 @@ const Text = styled.p`
         font-size:27px;
     }
     @media (max-width: 550px) {
-        font-size:26px;
+        font-size:18px;
         text-align: left;
     }
 `
