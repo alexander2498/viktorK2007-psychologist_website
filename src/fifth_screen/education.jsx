@@ -15,6 +15,11 @@ const Text = styled.p`
       font-size: 50px;
   font-family: "Bad Script", cursive;
   margin-left: 5vw;
+  
+  @media (max-width: 1024px) {
+    margin-top: 5vh;
+  }
+
   @media (max-width: 820px) {
     font-size: 27px;
     font-family: "Bad Script", cursive;
