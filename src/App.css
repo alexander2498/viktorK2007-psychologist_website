@@ -289,7 +289,7 @@ textarea {
 
 .box_you {
   display: flex;
- 
+
 }
 
 .about_flex {
@@ -344,12 +344,14 @@ textarea {
   width: 88vw;
   margin-top: 6vh;
   margin-left: 4vw;
+  height: 6vh;
 }
 
 .box_relaative {
   display: flex;
   width: 64vw;
   margin-left: 35vw;
+  margin-top: -4vh;
 }
 
 .girl_text_flex {
@@ -473,6 +475,7 @@ textarea {
     display: flex;
     width: 64vw;
     margin-left: 35vw;
+    margin-top: -4vh;
   }
 
  

@@ -15,12 +15,14 @@ const Text = styled.p`
     font-family:"Bad Script", cursive;
     font-size:26px;
     margin-top:3vh;
+    margin-left:1vw;
     @media (max-width: 820px) {
         font-size:12px;
         margin-top:4vh;
     }
     @media (max-width: 550px) {
         font-size:12px;
+        margin-top:1vh;
     }
 `
 const Container = styled.div`

@@ -48,6 +48,7 @@ const Text = styled.p`
   font-family: "Jost", sans-serif;
   @media (max-width: 820px) {
     font-size: 16px;
+    width: 51vw;
   }
   @media (max-width: 550px) {
     display:none;

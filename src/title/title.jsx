@@ -9,6 +9,8 @@ const TitleBox = styled(Box)(({ theme }) => ({
   marginTop: "5vh",
   fontSize: "60px",
   textAlign: 'center',
+  fontFamily: "Jost, sans-serif",
+
 
   [theme.breakpoints.down('1301')]: {
     marginTop: "5vh",
@@ -31,6 +33,7 @@ const TitleBox = styled(Box)(({ theme }) => ({
     fontSize: "26px"
   },
 }));
+
 
 export default function Title() {
   return (

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export default function Gipnoz2({text, }) {
+export default function Gipnoz2() {
     return (
 
         <Container  >
-            <Text  >{text}</Text>
+            <Text  ><strong>Эриксоновский коучинг</strong> может быть эффективным инструментом, если Вам необходимо планировать проект,приоритизировать задачи, найти решение или начать новый этап в Вашей жизни.Мэрилин Аткинсон, основательница этого направления, считает, что изменить мир можно одной беседой!</Text>
         </Container>
 
     );
