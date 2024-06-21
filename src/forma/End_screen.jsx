@@ -30,7 +30,7 @@ const TextSogl = styled.p`
     padding-top: 0.3vh;
     display: flex;
     justify-content: center;
-    font-size: 17px;
+    font-size: 11px;
     font-family: "Jost", sans-serif;
   }
 `;

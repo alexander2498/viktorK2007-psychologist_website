@@ -404,6 +404,10 @@ textarea {
 
 }
 
+.iconTelegram {
+  width: 5vw;
+}
+
 .infoLogoContainer{
   display: flex;
   justify-content: center;

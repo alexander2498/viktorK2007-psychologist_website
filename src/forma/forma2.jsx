@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
 import FormPopup from "./formPopUp";
-import { Typography } from "@mui/material";
 export default function Forma() {
 
     const [name, setName] = useState('');
@@ -48,13 +47,16 @@ export default function Forma() {
                 <InfoFlex >
 
 
-                    <PustoDi>
+                    <PustoDiv>
                         <HowToContact className="how_to_contact"><p>КАК СВЯЗАТЬСЯ</p></HowToContact>
 
 
 
 
-                        <FormBox onSubmit={sendFeedback} className="form_box" >
+                        <div style={{
+                            display: 'grid',
+                            justifyContent: 'center'
+                            }} onSubmit={sendFeedback} className="form_box" >
                             <Pismo width="24" height="18" viewBox="0 0 24 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -79,15 +81,16 @@ export default function Forma() {
                             <ButtonZap onClick={openDialog} type="submit" className="button_zap">
                                 <Otpr >Отправить</Otpr>
                             </ButtonZap>
-                        </FormBox>
-                    </PustoDi>
+                        </div>
+                    </PustoDiv>
                     <PustoDiv>
                         <ContactText className="contact_text"><p>КОНТАКТЫ</p></ContactText>
                         <Info >
                             <div className="infoLogoContainer">
                                 <div className="infoLogo" ></div>
                             </div>
-                            <Typography>AP.artatelier.ru@mail.ru</Typography>
+                            <TextForm className="LinkTelegram">AP.artatelier.ru@mail.ru</TextForm>
+                            <a className="LinkTelegram" href="https://t.me/arthypnosis"><TextForm>telegram: @arthypnosis</TextForm></a>
                         </Info>
                     </PustoDiv>
 
@@ -102,8 +105,8 @@ export default function Forma() {
 const Form = styled.div`
  box-shadow: 5px 5px 15px grey;
     background-color: #8ba7d3;
-    width: 80vw;
-    margin-left: 10vw;
+    width: 90vw;
+    margin-left: 5vw;
     border-radius: 26px;
     margin-top: 16vh;
     @media (max-width: 550px) {
@@ -119,18 +122,13 @@ const Form = styled.div`
 
 
 const PustoDiv = styled.div`
-    margin-right: 4vw;
+    padding: 2vh;
 `;
-const PustoDi = styled.div`
-width: 60vw;
-`;
-
 
 const HowToContact = styled.div`
     font-family: 'Jost', sans-serif;
     font-size: 50px;
     color: white;
-    padding-top: 4vh;
     display:flex;
     justify-content:center;
     @media (max-width: 1024px) {
@@ -143,13 +141,19 @@ const HowToContact = styled.div`
         font-family: "Jost", sans-serif;
     font-size: 19px;
     color: white;
-    padding-top: 4vh;
+    padding-top: 1vh;
     }
+`;
+
+const TextForm = styled.div`
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 1vh;
 `;
 
 const ContactText = styled.div`
     color: white;
-    padding-top: 4vh;
     font-family: 'Jost', sans-serif;
     font-size: 50px;
     display:flex;
@@ -162,28 +166,23 @@ const ContactText = styled.div`
     }
     @media (max-width: 550px) {
         color: white;
-    padding-top: 4vh;
+    padding-top: 1vh;
     font-family: "Jost", sans-serif;
     font-size: 19px;
     }
 `;
 
-const FormBox = styled.form`
-    width: 40vw;
-    margin-left: 4vw;
-    padding-top: 2vh;
-
-`;
 
 const ButtonZap = styled.button`
-    margin-left: 11vw;
+    justify-self: center;
+    width: 20vw;
     margin-top: 7vh;
     border-radius: 27px;
     background-color: rgba(255, 255, 255, 0.31);
     border: none;
-    @media (max-width: 550px) {
-        margin-left: 22vw;
+    @media (max-width: 820px) {
     margin-top: 5vh;
+    width: 40vw;
     }
 `;
 
@@ -199,7 +198,7 @@ const Otpr = styled.p`
     font-family: "Jost", sans-serif;
     padding: 0.5em;
     }
-    @media (max-width: 550px) {
+    @media (max-width: 820px) {
     font-size: 12px;
     color: white;
     font-family: "Jost", sans-serif;
@@ -210,7 +209,7 @@ const Otpr = styled.p`
 const FormBoxFlex = styled.div`
     display: flex;
     margin-top: 3vh;
-    @media (max-width: 550px) {
+    @media (max-width: 820px) {
     display: flex;
     margin-top: 11vh;
     } 
@@ -219,25 +218,22 @@ const FormBoxFlex = styled.div`
 const InfoFlex = styled.div`
     display: flex;
     justify-content:space-between;
-    height: 58vh;
+    @media (max-width: 820px) {
+        flex-direction: column;
+    } 
 `;
 
 const Info = styled.div`
     background-color: #9bb6e0;
-    width: 22vw;
-    height: 42vh;
-    margin-top: 3vh;
+    margin-top: 2vh;
     border-radius: 20px;
     border: 1px solid white;
     display:flex;
-    justify-content:center;
-    @media (max-width: 1024px) {
-    }
-    @media (max-width: 550px) {
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 820px) {
     background-color: #9bb6e0;
-    width: 30vw;
-    height: 32vh;
-    margin-top: 7vh;
+    margin-top: 2vh;
     border-radius: 20px;
     border: 1px solid white;
     } 
@@ -245,22 +241,19 @@ const Info = styled.div`
 
 const Pismo = styled.svg`
     margin-left: 36.5vw;
-    @media (max-width: 550px) {
-        margin-left: 45.5vw;
+    @media (max-width: 820px) {
+        margin-left: 82vw;
         width: 4vw;
     }
 `
 
 const FormName = styled.div`
     border-bottom: 2px solid white;
-    width: 36vw;
     margin-left: 2vw;
     margin-top: 3vh;
-    @media (max-width: 550px) {
+    @media (max-width: 820px) {
     border-bottom: white 1px solid;
-    width: 50vw;
-    margin-left: 0vw;
-    margin-top: 0vh;
+    width: 82vw;
     }
 `;
 const InputName = styled.input`
@@ -272,16 +265,15 @@ const FormPhone = styled.div`
     border-bottom: 2px solid white;
     margin-left: 2vw;
     width: 17vw;
-    @media (max-width: 550px) {
+    @media (max-width: 820px) {
     border-bottom: white 1px solid;
-    margin-left: 0vw;
-    width: 20vw;
+    width: 40vw;
     }
 `;
 
 const InputPhone = styled.input`
     width:17vw;
-    @media (max-width: 550px) {
+    @media (max-width: 820px) {
         width:20vw;
     }
 `
@@ -291,30 +283,19 @@ const FormEmail = styled.div`
     margin-left: 2vw;
     width: 17vw;
 
-    @media (max-width: 1024px) {
-        width: 17vw;
-    }
-    @media (max-width: 820px) {
-        width: 17vw;
-    }
 
-    @media (max-width: 550px) {
+    @media (max-width: 820px) {
     border-bottom: white 1px solid;
     margin-left: 2vw;
-    width: 28vw;
+    width: 40vw;
     }
 `;
 
 const InputEmail = styled.input`
     width: 17vw;
 
-@media (max-width: 1024px) {
-    width: 22vw;
-}
-@media (max-width: 820px) {
-    width: 18vw;
-}
-@media (max-width: 550px) {
+
+    @media (max-width: 820px) {
     width: 32vw;
     }
 `;
@@ -324,16 +305,15 @@ const FormComment = styled.div`
     width: 36vw;
     margin-left: 2vw;
     margin-top: 6vh;
-    @media (max-width: 550px) {
-    border-bottom: white 1px solid;
-    width: 50vw;
-    margin-left: 0vw;
-    margin-top: 9vh;
+    @media (max-width: 820px) {
+        border-bottom: white 1px solid;
+        margin-top: 9vh;
+        width: 82vw;
     }
 `;
 const InputComment = styled.input`
     width: 36vw;
-    @media (max-width: 550px) {
+    @media (max-width: 820px) {
     width: 50vw;
     }
 `;
