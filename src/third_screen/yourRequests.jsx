@@ -29,6 +29,6 @@ const Text = styled.p`
     margin-left: 0;
     display:flex;
     justify-content:center;
-    margin-top: -2vh;
+    margin-top: 0vh;
   }
 `

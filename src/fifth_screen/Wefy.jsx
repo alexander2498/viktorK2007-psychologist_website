@@ -23,4 +23,7 @@ const Text = styled.p`
         font-size:18px;
         text-align: left;
     }
+    @media (max-width: 335px) {
+        font-size:16px;
+    }
 `

@@ -44,10 +44,11 @@ const GirlText0 = styled.div`
 `;
 
 const Text = styled.p`
-    font-size: 26px;
+    font-size: 24px;
   font-family: "Jost", sans-serif;
   @media (max-width: 820px) {
     font-size: 16px;
+    width: 51vw;
   }
   @media (max-width: 550px) {
     display:none;

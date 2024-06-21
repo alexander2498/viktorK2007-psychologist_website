@@ -70,7 +70,7 @@ export default function Forma() {
                                     <InputPhone type="text" name="phone" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)} />
                                 </FormPhone>
                                 <FormEmail>
-                                    <InputEmail type="email" name="email" placeholder="Электронная почта" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                    <InputEmail type="email" name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                                 </FormEmail>
                             </FormBoxFlex>
                             <FormComment>
@@ -292,16 +292,16 @@ const FormEmail = styled.div`
     width: 17vw;
 
     @media (max-width: 1024px) {
-        width: 22vw;
+        width: 17vw;
     }
     @media (max-width: 820px) {
-        width: 18vw;
+        width: 17vw;
     }
 
     @media (max-width: 550px) {
     border-bottom: white 1px solid;
     margin-left: 2vw;
-    width: 32vw;
+    width: 28vw;
     }
 `;
 
