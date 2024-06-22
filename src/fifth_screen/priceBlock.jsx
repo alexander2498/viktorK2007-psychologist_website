@@ -1,20 +1,23 @@
 
-
+import { Grid } from "@mui/material";
 import styled from "styled-components";
 
 export default function PriceBlock() {
     return (
+        <Grid display={'block'} height={'20vh'}>
 
         <BlokFlex >
             <Blok1 >
                 <BlokBackground1 >
                     <BlokBackground1Text1 >
-                        <Price2 > СЕССИЯ ЗНАКОМСТВО
-                            4 000 руб. Продолжительность 60 мин</Price2>
+                        <Price2 >СЕССИЯ ЗНАКОМСТВО<br/>
+                            Цена: 4 000 руб.<br/>Продолжительность: 60 мин</Price2>
                     </BlokBackground1Text1>
 
                     <BlokBackground1Text2 >
-                        <Price2 > СЕССИЯ КОУЧИНГА 45 минут 4 000 руб.</Price2>
+                        <Price2 >СЕССИЯ КОУЧИНГА<br/>
+                        Цена: 4 000 руб.<br/>
+                        Продолжительность: 45 мин</Price2>
                     </BlokBackground1Text2 >
                 </BlokBackground1>
             </Blok1 >
@@ -23,17 +26,21 @@ export default function PriceBlock() {
 
                 <BlokBackground2 >
                     <BlokBackground2Text1 >
-                        <Price1 > ГУМАНИСТИЧЕСКИЙ ГИПНОЗ, АРТ-ТЕРАПИЯ до 1.30 мин, 5000 руб. онлайн или 8000 руб. очно </Price1>
+                        <Price1 > ГУМАНИСТИЧЕСКИЙ ГИПНОЗ, АРТ-ТЕРАПИЯ<br/>
+                        Продолжительность: до 1.5 ч<br/>
+                        Цена онлайн: 5000 руб.<br/>
+                        Цена очно: 8000 руб.</Price1>
                     </BlokBackground2Text1>
                     <BlokBackground2Text2 >
                         <Price1 >
-                            РАБОТА С: группами, парами по запросу. работаю со взрослыми, подростками от 15 лет.</Price1>
+                            Работа с группами, парами по запросу.<br/>Работаю со взрослыми, подростками от 15 лет.</Price1>
 
                     </BlokBackground2Text2>
                 </BlokBackground2>
 
             </Blok2>
         </BlokFlex>
+        </Grid>
 
     );
 }
@@ -81,7 +88,7 @@ const BlokBackground1 = styled.div`
 
 const BlokBackground1Text1 = styled.div`
             padding: 1em;
-            font-size: 26px;
+            font-size: 22px;
             border-bottom: 1px solid gray;
             @media (max-width: 820px) {
                 padding: 1em;
@@ -98,7 +105,7 @@ const BlokBackground1Text1 = styled.div`
             `;
 const BlokBackground1Text2 = styled.div`
             padding: 1em;
-            font-size: 26px;
+            font-size: 22px;
             margin-top: 1vh;
             width: 30vw;
             @media (max-width: 820px) {
@@ -150,13 +157,13 @@ const BlokBackground2 = styled.div`
     background-color: #ebe0e0;
     border-radius: 30px;
     position: absolute;
-    margin-top: 22vh;
+    margin-top: 32vh;
     box-shadow: 10px 0px 1px rgb(226, 199, 202);
 }
             `;
 const BlokBackground2Text1 = styled.div`
             margin-top: 1vh;
-            font-size: 26px;
+            font-size: 22px;
             border-bottom: 1px solid gray;
             @media (max-width: 820px) {
              margin-top: 1vh;
@@ -171,8 +178,7 @@ const BlokBackground2Text1 = styled.div`
 }
             `;
 const BlokBackground2Text2 = styled.div`
-            font-size: 24px;
-            margin-top: 1vh;
+            font-size: 22px;
             width: 30vw;
             @media (max-width: 820px) {
                 font-size: 16px;
