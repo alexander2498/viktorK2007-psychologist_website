@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import FormPopup from "./formPopUp";
+import { Grid } from "@mui/material";
 export default function Forma() {
 
     const [name, setName] = useState('');
@@ -42,6 +43,7 @@ export default function Forma() {
     return (
         <>
             <FormPopup open={dialogIsOpen} onClose={closeDialog} />
+            <Grid display={'flex'} justifyContent={'center'} >
             <Form>
 
                 <InfoFlex >
@@ -96,6 +98,7 @@ export default function Forma() {
 
                 </InfoFlex>
             </Form>
+            </Grid>
         </>
 
     );
@@ -105,15 +108,13 @@ export default function Forma() {
 const Form = styled.div`
  box-shadow: 5px 5px 15px grey;
     background-color: #8ba7d3;
-    width: 90vw;
-    margin-left: 5vw;
+    width: 72vw;
     border-radius: 26px;
     margin-top: 16vh;
     @media (max-width: 550px) {
     box-shadow: 5px 5px 15px grey;
     background-color: #8ba7d3;
     width: 94vw;
-    margin-left: 3vw;
     border-radius: 26px;
     margin-top: 13vh;
     }
@@ -122,7 +123,7 @@ const Form = styled.div`
 
 
 const PustoDiv = styled.div`
-    padding: 2vh;
+    padding: 4vh;
 `;
 
 const HowToContact = styled.div`
@@ -217,7 +218,7 @@ const FormBoxFlex = styled.div`
 
 const InfoFlex = styled.div`
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     @media (max-width: 820px) {
         flex-direction: column;
     } 
