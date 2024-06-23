@@ -20,15 +20,15 @@ server.post("/api/feedback", async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "form_test@inbox.ru",
-        pass: "0CtJ69jtVHuPDexJwxX2",
+        user: "ap.artatelier.ru@mail.ru",
+        pass: "rYUjqdtM05q9K3dd17JH",
       },
     });
 
     const { email, comment, name, phone } = req.body;
     const mail = {
-      from: "form_test@inbox.ru",
-      to: "ivanzagorin6@gmail.com",
+      from: "ap.artatelier.ru@mail.ru",
+      to: "ap.artatelier.ru@mail.ru",
       subject: "This letter was sent by nodemailer",
       text: `Name: ${name}\nMessage: ${comment}\nEmail: ${email}\nPhone: ${phone}`,
     };

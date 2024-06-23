@@ -21,7 +21,7 @@ export default function Forma() {
 
         const feedback = { name, phone, email, comment };
 
-        fetch("http://localhost:3001/api/feedback", {
+        fetch("https://ap-artatelier.ru/api/feedback", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
