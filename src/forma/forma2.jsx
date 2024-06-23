@@ -11,6 +11,7 @@ export default function Forma() {
     const [dialogIsOpen, setDialogIsOpen] = useState(false)
 
     const openDialog = () => setDialogIsOpen(true)
+    
 
     const closeDialog = () => setDialogIsOpen(false)
 
@@ -21,6 +22,8 @@ export default function Forma() {
 
         const feedback = { name, phone, email, comment };
 
+        console.log('0000');
+
         fetch("https://ap-artatelier.ru/api/feedback", {
             method: "POST",
             headers: {
@@ -30,6 +33,7 @@ export default function Forma() {
         })
             .then((response) => response.json())
             .then((json) => {
+                setDialogIsOpen(true)
             })
             .catch((error) => {
                 console.log(error);
@@ -44,7 +48,7 @@ export default function Forma() {
         <>
             <FormPopup open={dialogIsOpen} onClose={closeDialog} />
             <Grid display={'flex'} justifyContent={'center'} >
-            <Form>
+            <Form  >
 
                 <InfoFlex >
 
@@ -58,7 +62,7 @@ export default function Forma() {
                         <div style={{
                             display: 'grid',
                             justifyContent: 'center'
-                            }} onSubmit={sendFeedback} className="form_box" >
+                            }}  className="form_box" >
                             <Pismo width="24" height="18" viewBox="0 0 24 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -80,7 +84,7 @@ export default function Forma() {
                             <FormComment>
                                 <InputComment type="text" name="comment" placeholder="Ваш комментарий" value={comment} onChange={(e) => setComment(e.target.value)} />
                             </FormComment>
-                            <ButtonZap onClick={openDialog} type="submit" className="button_zap">
+                            <ButtonZap onClick={sendFeedback} type="submit" className="button_zap">
                                 <Otpr >Отправить</Otpr>
                             </ButtonZap>
                         </div>
