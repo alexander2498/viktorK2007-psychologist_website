@@ -6,11 +6,11 @@ const cors = require("cors");
 var server = express();
 
 server.use(cors()); 
-server.use(express.static(path.join(__dirname, "public")));
+server.use(express.static(path.join(__dirname, 'build')));
 server.use(express.json());
 
-server.get("/", (req, res, next) => {
-  res.send("This is the get request");
+server.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 server.post("/api/feedback", async (req, res) => {
