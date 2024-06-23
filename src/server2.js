@@ -6,12 +6,14 @@ const cors = require("cors");
 var server = express();
 
 server.use(cors()); 
-server.use(express.static(path.join(__dirname, 'build')));
+server.use(express.static(path.join(__dirname, '../build')));
 server.use(express.json());
 
 server.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
+
+console.log(__dirname)
 
 server.post("/api/feedback", async (req, res) => {
   try {
@@ -32,6 +34,7 @@ server.post("/api/feedback", async (req, res) => {
       subject: "This letter was sent by nodemailer",
       text: `Name: ${name}\nMessage: ${comment}\nEmail: ${email}\nPhone: ${phone}`,
     };
+    
 
     transporter.verify(function (error, success) {
       if (error) {
