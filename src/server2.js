@@ -44,9 +44,13 @@ server.post("/api/feedback", async (req, res) => {
       }
     });
 
-    await transporter.sendMail(mail);
-    return res.status(200).send({
+    const info = await transporter.sendMail(mail);
+    
+      return res.status(200).send({
+        info: info,
     });
+
+    
   } catch (e) {
     return res.status(500).send({
       status: 500,
