@@ -175,6 +175,7 @@ textarea {
   margin-top: -2vw;
   width: 100vw;
   height: 105vh;
+  z-index: 1001;
 }
 
 @-webkit-keyframes imj {
