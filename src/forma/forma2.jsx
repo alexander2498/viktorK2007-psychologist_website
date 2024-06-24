@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import FormPopup from "./formPopUp";
 import { Grid } from "@mui/material";
+import Telegram from "../svg/Telegram";
 export default function Forma() {
 
     const [name, setName] = useState('');
@@ -9,8 +10,6 @@ export default function Forma() {
     const [email, setEmail] = useState('');
     const [comment, setComment] = useState('');
     const [dialogIsOpen, setDialogIsOpen] = useState(false)
-
-    const openDialog = () => setDialogIsOpen(true)
     
 
     const closeDialog = () => setDialogIsOpen(false)
@@ -22,7 +21,6 @@ export default function Forma() {
 
         const feedback = { name, phone, email, comment };
 
-        console.log('0000');
 
         fetch("https://ap-artatelier.ru/api/feedback", {
             method: "POST",
@@ -96,7 +94,12 @@ export default function Forma() {
                                 <div className="infoLogo" ></div>
                             </div>
                             <TextForm className="LinkTelegram">AP.artatelier.ru@mail.ru</TextForm>
-                            <a className="LinkTelegram" href="https://t.me/arthypnosis"><TextForm>telegram: @arthypnosis</TextForm></a>
+                            <a className="LinkTelegram" href="https://t.me/arthypnosis">
+                                <TextForm>
+                                    <Telegram />
+                                    @arthypnosis
+                                </TextForm>
+                            </a>
                         </Info>
                     </PustoDiv>
 
@@ -115,6 +118,9 @@ const Form = styled.div`
     width: 72vw;
     border-radius: 26px;
     margin-top: 16vh;
+    @media (max-width: 820px) {
+    width: 88vw;
+    }
     @media (max-width: 550px) {
     box-shadow: 5px 5px 15px grey;
     background-color: #8ba7d3;
@@ -151,6 +157,8 @@ const HowToContact = styled.div`
 `;
 
 const TextForm = styled.div`
+    display: flex;
+    align-items: center;
     font-family: 'Jost', sans-serif;
     font-size: 14px;
     color: white;
