@@ -1,3 +1,6 @@
+
+
+
 body {
   background-color: #f2eaea;
   margin: 0;
@@ -166,8 +169,10 @@ textarea {
   background-image: url(../public/img/bg.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-animation: imj 10s infinite;
   animation: imj 10s infinite;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,15 +182,16 @@ textarea {
 }
 
 @-webkit-keyframes imj {
-  from {
-    -webkit-background-clip: url(../public/img/bg.jpg) center / cover no-repeat;
+  0% {
+    background: url(../public/img/bg.jpg) center / cover no-repeat;
   }
 
   50% {
-    -webkit-background-clip: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
+    background: url(../public/img/mountain-black.png) center / cover no-repeat;
+
   }
-  to {
-    -webkit-background-clip: url(../public/img/bg.jpg) center / cover no-repeat;
+  100% {
+    background: url(../public/img/bg.jpg) center / cover no-repeat;
   }
 }
 
@@ -195,7 +201,7 @@ textarea {
   }
 
   50% {
-    background-image: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
+    background-image: url(../public/img/mountain-black.png);
   }
   100% {
     background-image: url(../public/img/bg.jpg);
