@@ -52,7 +52,7 @@ export default function Forma() {
 
 
                     <PustoDiv>
-                        <HowToContact className="how_to_contact"><p>КАК СВЯЗАТЬСЯ</p></HowToContact>
+                        <HowToContact className="how_to_contact"><p>СВЯЗАТЬСЯ</p></HowToContact>
 
 
 
@@ -80,7 +80,7 @@ export default function Forma() {
                                 </FormEmail>
                             </FormBoxFlex>
                             <FormComment>
-                                <InputComment type="text" name="comment" placeholder="Ваш комментарий" value={comment} onChange={(e) => setComment(e.target.value)} />
+                                <InputComment type="text" name="comment" placeholder="Ваш запрос" value={comment} onChange={(e) => setComment(e.target.value)} />
                             </FormComment>
                             <ButtonZap onClick={sendFeedback} type="submit" className="button_zap">
                                 <Otpr >Отправить</Otpr>
@@ -133,7 +133,7 @@ const Form = styled.div`
 
 
 const PustoDiv = styled.div`
-    padding: 4vh;
+    padding: 2vh;
 `;
 
 const HowToContact = styled.div`
@@ -175,14 +175,10 @@ const ContactText = styled.div`
         font-size:37px;
     }
     @media (max-width: 820px) {
-        font-size:31px
+        display: none;
     }
     @media (max-width: 550px) {
-        color: white;
-    padding-top: 1vh;
-    font-family: "Jost", sans-serif;
-    font-size: 19px;
-    }
+        display: none;
 `;
 
 
@@ -194,7 +190,7 @@ const ButtonZap = styled.button`
     background-color: rgba(255, 255, 255, 0.31);
     border: none;
     @media (max-width: 820px) {
-    margin-top: 5vh;
+    margin-top: 4vh;
     width: 40vw;
     }
 `;
@@ -238,7 +234,6 @@ const InfoFlex = styled.div`
 
 const Info = styled.div`
     background-color: #9bb6e0;
-    margin-top: 2vh;
     border-radius: 20px;
     border: 1px solid white;
     display:flex;
@@ -246,7 +241,6 @@ const Info = styled.div`
     align-items: center;
     @media (max-width: 820px) {
     background-color: #9bb6e0;
-    margin-top: 2vh;
     border-radius: 20px;
     border: 1px solid white;
     } 

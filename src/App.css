@@ -166,6 +166,7 @@ textarea {
   background-image: url(../public/img/bg.jpg);
   background-size: cover;
   background-position: center;
+  -webkit-animation: imj 10s infinite;
   animation: imj 10s infinite;
   background-size: cover;
   background-position: center;
@@ -182,6 +183,16 @@ textarea {
 
   50% {
     -webkit-background-image: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
+  }
+}
+
+@keyframes imj {
+  0% {
+    background-image: url(../public/img/bg.jpg) center / cover no-repeat;
+  }
+
+  50% {
+    background-image: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
   }
 }
 
@@ -397,7 +408,7 @@ textarea {
 }
 
 .infoLogo{
-  background-image: url(./assets/Logo.jpg);
+  background-image: url(./assets/Logo_green.png);
   width: 9vw;
   height: 9vw;
   background-size: cover;
@@ -428,10 +439,6 @@ textarea {
 }
 
 @media (max-width:820px) {
-  .background {
-    background-image: url(../public/img/bg.jpg);
-    animation: none;
-  }
   .cartinca {
     width: 13vw;
     height: 13vw;
@@ -487,6 +494,14 @@ textarea {
     margin-top: -4vh;
   }
 
+  .infoLogo{
+    background-image: url(./assets/Logo_green.png);
+    width: 18vw;
+    height: 18vw;
+    background-size: cover;
+  
+  }
+
  
 
   .sad_line_flex {
@@ -517,11 +532,6 @@ textarea {
 }
 
 @media (max-width: 550px) {
-  .background {
-    background-image: url(../public/img/bg.jpg);
-    animation: none;
-  }
-
 
   .sad_line_flex{
     margin-top: 8vh;
