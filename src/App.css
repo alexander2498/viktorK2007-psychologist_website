@@ -170,29 +170,13 @@ textarea {
   background-size: cover;
   background-position: center;
   animation: imj 10s infinite;
-  -webkit-animation: none;
-  -moz-animation: none;
-  -o-animation: none;
+  -webkit-animation: imj 10s infinite;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: -2vw;
   width: 100vw;
   height: 105vh;
-}
-
-@-webkit-keyframes imj {
-  0% {
-    background: url(../public/img/bg.jpg) center / cover no-repeat;
-  }
-
-  50% {
-    background: url(../public/img/mountain-black.png) center / cover no-repeat;
-
-  }
-  100% {
-    background: url(../public/img/bg.jpg) center / cover no-repeat;
-  }
 }
 
 @keyframes imj {
