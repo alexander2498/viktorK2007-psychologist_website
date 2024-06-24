@@ -178,14 +178,14 @@ textarea {
 
 @-webkit-keyframes imj {
   from {
-    -webkit-animation: url(../public/img/bg.jpg) center / cover no-repeat;
+    -webkit-background-clip: url(../public/img/bg.jpg) center / cover no-repeat;
   }
 
   50% {
-    -webkit-animation: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
+    -webkit-background-clip: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
   }
   to {
-    -webkit-animation: url(../public/img/bg.jpg) center / cover no-repeat;
+    -webkit-background-clip: url(../public/img/bg.jpg) center / cover no-repeat;
   }
 }
 
