@@ -167,7 +167,6 @@ textarea {
   background-size: cover;
   background-position: center;
   -webkit-animation: imj 10s infinite;
-  -animation: imj 10s infinite;
   animation: imj 10s infinite;
   background-size: cover;
   background-position: center;
@@ -175,19 +174,18 @@ textarea {
   margin-top: -2vw;
   width: 100vw;
   height: 105vh;
-  z-index: 1001;
 }
 
 @-webkit-keyframes imj {
   0% {
-    -webkit-background: url(../public/img/bg.jpg) center / cover no-repeat;
+    background: url(../public/img/bg.jpg) center / cover no-repeat;
   }
 
   50% {
-    -webkit-background: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
+    background: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
   }
   100% {
-    -webkit-background: url(../public/img/bg.jpg);
+    background: url(../public/img/bg.jpg) center / cover no-repeat;
   }
 }
 
