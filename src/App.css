@@ -175,13 +175,13 @@ textarea {
   height: 105vh;
 }
 
-@keyframes imj {
+@-webkit-keyframes imj {
   0% {
-    background-image: url(../public/img/bg.jpg) center / cover no-repeat;
+    -webkit-background-image: url(../public/img/bg.jpg) center / cover no-repeat;
   }
 
   50% {
-    background-image: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
+    -webkit-background-image: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
   }
 }
 
