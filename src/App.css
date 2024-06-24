@@ -184,6 +184,9 @@ textarea {
   50% {
     -webkit-background-image: url(../public/img/andreas-kind-bUhzlj3gGso-unsplash\ 1.png);
   }
+  100% {
+    -webkit-background-image: url(../public/img/bg.jpg) center / cover no-repeat;
+  }
 }
 
 @keyframes imj {
