@@ -20,6 +20,12 @@ const BurgerMenu = () => {
             <div className={`menu ${isOpen ? 'show' : ''}`}>
                 <div className='TextMenu' >
                     <ul>
+                        <a href="#about_me"  >
+                            <li><Text>Обо мне</Text></li>
+                        </a>
+                        <a href="#about_you"  >
+                            <li><Text>О вас</Text></li>
+                        </a>
                         <a href="#methods"  >
                             <li><Text>О методах</Text></li>
                         </a>

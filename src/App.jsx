@@ -38,10 +38,6 @@ import GirlText2 from './svg/GirlText2';
 
 
 
-
-
-
-
 function App() {
   return (
     <div>
@@ -57,6 +53,7 @@ function App() {
         </a>
 
       </div>
+      <a id='about_me'></a>
       <TextTitle />
       <div className='grup_text_title'>
         <div className='image_3' ></div>
@@ -85,11 +82,15 @@ function App() {
       </div>  
       <div className='image3_line' ></div>
       <div className='class_image_5' ></div>
+      <a id='about_you'></a>
       <div className='box_you' >
         <AboutYou />
         <YourRequests />
         <IfYou />
       </div>
+
+
+      
       <div className='about_flex' >
         <div>
           <AboutText text={"— в поиске спокойствия, самоуважения и принятия себя"} />
@@ -103,6 +104,7 @@ function App() {
           <AboutText text={"— или просто чувствуете стремление к переменам и внутреннему росту"} />
         </div>
       </div>
+      
 
       <Choice1 />
       <Choice2 />

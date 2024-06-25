@@ -29,6 +29,12 @@ export default function MenuTitle() {
   return (
     <div>
       <MenuNone>
+        <a href="#about_me"  >
+        <TopButton border={'none'} backgroundColor={'rgba(255, 255, 255, 0.4)'} sign="обо мне" />
+        </a>
+        <a href="#about_you"  >
+        <TopButton border={'none'} backgroundColor={'rgba(255, 255, 255, 0.4)'} sign="о вас" />
+        </a>
         <a href="#methods"  >
         <TopButton border={'none'} backgroundColor={'rgba(255, 255, 255, 0.4)'} sign="о методах" />
         </a>

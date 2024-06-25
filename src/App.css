@@ -170,7 +170,6 @@ textarea {
   background-size: cover;
   background-position: center;
   animation: imj 10s infinite;
-  -webkit-animation: imj 10s infinite;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,6 +185,7 @@ textarea {
 
   50% {
     background-image: url(../public/img/mountain-black.png);
+
   }
   100% {
     background-image: url(../public/img/bg.jpg);
@@ -528,6 +528,11 @@ textarea {
 }
 
 @media (max-width: 550px) {
+  .background {
+    background-size: cover;
+    background-position: center;
+    animation: none;
+  }
 
   .sad_line_flex{
     margin-top: 8vh;
