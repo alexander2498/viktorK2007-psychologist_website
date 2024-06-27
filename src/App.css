@@ -170,6 +170,7 @@ textarea {
   background-size: cover;
   background-position: center;
   animation: imj 10s infinite;
+  -webkit-animation: none;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
