@@ -29,7 +29,7 @@ const Container = styled.div`
   background-color: #ebe1e1;
   border-radius: 20px;
   margin-left: 6vw;
-  margin-top: 8vh;
+  margin-top: 6vh;
   box-shadow: 6px 3px 4px gray;
   font-size: 30px;
   font-family: "Jost", sans-serif;

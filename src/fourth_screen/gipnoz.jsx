@@ -15,7 +15,7 @@ export default function Gipnoz() {
 const Text = styled.p`
 font-size: 26px;
   font-family: "Jost", sans-serif;
-  width: 74vw;
+  width: 72vw;
   padding: 1.5em;
 
   @media (max-width: 1025px) {
